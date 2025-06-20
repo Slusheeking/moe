@@ -10,10 +10,16 @@ import asyncio
 import argparse
 import logging
 import sys
+import os
 from typing import List, Dict
+from dotenv import load_dotenv
 
-from trading_system.alpaca_client import AlpacaClient
-from trading_system import config
+from alpaca.trading.client import TradingClient
+from alpaca.trading.requests import MarketOrderRequest
+from alpaca.trading.enums import OrderSide, TimeInForce
+
+# Load environment variables
+load_dotenv()
 
 # Set up logging
 logging.basicConfig(
@@ -27,20 +33,20 @@ class OrderPositionCanceller:
     """Utility for canceling orders and closing positions"""
     
     def __init__(self):
-        self.alpaca = AlpacaClient(
-            config.ALPACA_KEY, 
-            config.ALPACA_SECRET, 
-            config.ALPACA_BASE_URL
+        self.client = TradingClient(
+            api_key=os.getenv('ALPACA_API_KEY'),
+            secret_key=os.getenv('ALPACA_SECRET_KEY'),
+            paper=True  # Use paper trading
         )
     
-    async def cancel_orders_for_symbol(self, symbol: str) -> Dict:
+    def cancel_orders_for_symbol(self, symbol: str) -> Dict:
         """Cancel all orders for a specific symbol"""
         try:
             logger.info(f"🔍 Checking orders for {symbol}...")
             
-            # Get all open orders for this symbol
-            open_orders = await self.alpaca.list_orders(status='open')
-            symbol_orders = [order for order in open_orders if order.get('symbol') == symbol]
+            # Get all open orders
+            open_orders = self.client.get_orders()
+            symbol_orders = [order for order in open_orders if order.symbol == symbol]
             
             if not symbol_orders:
                 logger.info(f"📋 No open orders found for {symbol}")
@@ -52,19 +58,19 @@ class OrderPositionCanceller:
             failed_count = 0
             
             for order in symbol_orders:
-                order_id = order.get('id')
-                order_type = order.get('order_type')
-                qty = order.get('qty')
+                order_id = order.id
+                order_type = order.order_type
+                qty = order.qty
                 
                 logger.info(f"  Cancelling: {order_type} {qty} {symbol} (ID: {order_id})")
                 
-                success = await self.alpaca.cancel_order(order_id)
-                if success:
+                try:
+                    self.client.cancel_order_by_id(order_id)
                     cancelled_count += 1
                     logger.info(f"  ✅ Cancelled order {order_id}")
-                else:
+                except Exception as e:
                     failed_count += 1
-                    logger.error(f"  ❌ Failed to cancel order {order_id}")
+                    logger.error(f"  ❌ Failed to cancel order {order_id}: {e}")
             
             logger.info(f"🎯 {symbol} Orders: {cancelled_count} cancelled, {failed_count} failed")
             return {'cancelled': cancelled_count, 'failed': failed_count}
@@ -73,68 +79,79 @@ class OrderPositionCanceller:
             logger.error(f"Error cancelling orders for {symbol}: {e}")
             return {'cancelled': 0, 'failed': 1}
     
-    async def cancel_all_orders(self) -> Dict:
+    def cancel_all_orders(self) -> Dict:
         """Cancel all open orders"""
         try:
             logger.info("🔍 Checking all open orders...")
             
-            # Use Alpaca's cancel all orders method
-            cancelled_count = await self.alpaca.cancel_all_orders()
+            # Get all open orders and cancel them
+            open_orders = self.client.get_orders()
+            cancelled_count = 0
+            failed_count = 0
             
-            logger.info(f"🎯 All Orders: {cancelled_count} cancelled")
-            return {'cancelled': cancelled_count, 'failed': 0}
+            for order in open_orders:
+                try:
+                    self.client.cancel_order_by_id(order.id)
+                    cancelled_count += 1
+                    logger.info(f"  ✅ Cancelled order {order.id} ({order.symbol})")
+                except Exception as e:
+                    failed_count += 1
+                    logger.error(f"  ❌ Failed to cancel order {order.id}: {e}")
+            
+            logger.info(f"🎯 All Orders: {cancelled_count} cancelled, {failed_count} failed")
+            return {'cancelled': cancelled_count, 'failed': failed_count}
             
         except Exception as e:
             logger.error(f"Error cancelling all orders: {e}")
             return {'cancelled': 0, 'failed': 1}
     
-    async def close_position_for_symbol(self, symbol: str) -> Dict:
+    def close_position_for_symbol(self, symbol: str) -> Dict:
         """Close position for a specific symbol"""
         try:
             logger.info(f"🔍 Checking position for {symbol}...")
             
             # Get position for this symbol
-            position = await self.alpaca.get_position(symbol)
-            
-            if not position:
+            try:
+                position = self.client.get_open_position(symbol)
+            except Exception:
                 logger.info(f"📊 No position found for {symbol}")
                 return {'closed': 0, 'failed': 0}
             
-            qty = int(float(position['qty']))
-            current_price = float(position['current_price'])
-            market_value = float(position['market_value'])
+            qty = int(position.qty)
+            current_price = float(position.current_price) if position.current_price else 0
+            market_value = float(position.market_value)
             
             logger.info(f"📊 Found position: {qty} shares of {symbol} @ ${current_price:.2f} (${market_value:,.2f})")
             
             # Place market sell order to close position
-            logger.info(f"  Placing market sell order for {qty} shares...")
+            logger.info(f"  Placing market sell order for {abs(qty)} shares...")
             
-            order_result = await self.alpaca.place_order(
+            market_order = MarketOrderRequest(
                 symbol=symbol,
                 qty=abs(qty),  # Ensure positive quantity
-                side='sell',
-                type='market',
-                time_in_force='day'
+                side=OrderSide.SELL,
+                time_in_force=TimeInForce.DAY
             )
             
-            if order_result:
-                logger.info(f"  ✅ Market sell order placed for {symbol} (Order ID: {order_result.get('id')})")
+            try:
+                order_result = self.client.submit_order(market_order)
+                logger.info(f"  ✅ Market sell order placed for {symbol} (Order ID: {order_result.id})")
                 return {'closed': 1, 'failed': 0}
-            else:
-                logger.error(f"  ❌ Failed to place sell order for {symbol}")
+            except Exception as e:
+                logger.error(f"  ❌ Failed to place sell order for {symbol}: {e}")
                 return {'closed': 0, 'failed': 1}
                 
         except Exception as e:
             logger.error(f"Error closing position for {symbol}: {e}")
             return {'closed': 0, 'failed': 1}
     
-    async def close_all_positions(self) -> Dict:
+    def close_all_positions(self) -> Dict:
         """Close all open positions"""
         try:
             logger.info("🔍 Checking all positions...")
             
             # Get all positions
-            positions = await self.alpaca.list_positions()
+            positions = self.client.get_all_positions()
             
             if not positions:
                 logger.info("📊 No positions found")
@@ -146,31 +163,32 @@ class OrderPositionCanceller:
             failed_count = 0
             
             for position in positions:
-                symbol = position['symbol']
-                qty = int(float(position['qty']))
-                current_price = float(position['current_price'])
-                market_value = float(position['market_value'])
+                symbol = position.symbol
+                qty = int(position.qty)
+                current_price = float(position.current_price) if position.current_price else 0
+                market_value = float(position.market_value)
                 
                 logger.info(f"  Closing: {qty} shares of {symbol} @ ${current_price:.2f} (${market_value:,.2f})")
                 
                 # Place market sell order
-                order_result = await self.alpaca.place_order(
+                market_order = MarketOrderRequest(
                     symbol=symbol,
                     qty=abs(qty),
-                    side='sell',
-                    type='market',
-                    time_in_force='day'
+                    side=OrderSide.SELL,
+                    time_in_force=TimeInForce.DAY
                 )
                 
-                if order_result:
+                try:
+                    order_result = self.client.submit_order(market_order)
                     closed_count += 1
                     logger.info(f"  ✅ Market sell order placed for {symbol}")
-                else:
+                except Exception as e:
                     failed_count += 1
-                    logger.error(f"  ❌ Failed to place sell order for {symbol}")
+                    logger.error(f"  ❌ Failed to place sell order for {symbol}: {e}")
                 
                 # Small delay between orders
-                await asyncio.sleep(0.5)
+                import time
+                time.sleep(0.5)
             
             logger.info(f"🎯 All Positions: {closed_count} closed, {failed_count} failed")
             return {'closed': closed_count, 'failed': failed_count}
@@ -179,19 +197,17 @@ class OrderPositionCanceller:
             logger.error(f"Error closing all positions: {e}")
             return {'closed': 0, 'failed': 1}
     
-    async def process_symbol(self, symbol: str) -> None:
+    def process_symbol(self, symbol: str) -> None:
         """Process cancellation/closure for specific symbol or ALL"""
         try:
-            await self.alpaca.connect()
-            
             if symbol.upper() == 'ALL':
                 logger.info("🚨 CANCELLING ALL ORDERS AND CLOSING ALL POSITIONS")
                 
                 # Cancel all orders first
-                order_results = await self.cancel_all_orders()
+                order_results = self.cancel_all_orders()
                 
                 # Then close all positions
-                position_results = await self.close_all_positions()
+                position_results = self.close_all_positions()
                 
                 # Summary
                 logger.info("\n" + "="*50)
@@ -206,10 +222,10 @@ class OrderPositionCanceller:
                 logger.info(f"🚨 CANCELLING ORDERS AND CLOSING POSITION FOR {symbol}")
                 
                 # Cancel orders for this symbol
-                order_results = await self.cancel_orders_for_symbol(symbol)
+                order_results = self.cancel_orders_for_symbol(symbol)
                 
                 # Close position for this symbol
-                position_results = await self.close_position_for_symbol(symbol)
+                position_results = self.close_position_for_symbol(symbol)
                 
                 # Summary
                 logger.info("\n" + "="*50)
@@ -222,11 +238,9 @@ class OrderPositionCanceller:
                 
         except Exception as e:
             logger.error(f"Error processing {symbol}: {e}")
-        finally:
-            await self.alpaca.disconnect()
 
 
-async def main():
+def main():
     """Main entry point"""
     parser = argparse.ArgumentParser(
         description='Cancel orders and close positions for specific symbols or all positions',
@@ -268,14 +282,14 @@ Examples:
     
     # Process the request
     canceller = OrderPositionCanceller()
-    await canceller.process_symbol(symbol)
+    canceller.process_symbol(symbol)
     
     logger.info("✅ Operation completed")
 
 
 if __name__ == "__main__":
     try:
-        asyncio.run(main())
+        main()
     except KeyboardInterrupt:
         logger.info("⌨️ Operation cancelled by user")
         sys.exit(1)
