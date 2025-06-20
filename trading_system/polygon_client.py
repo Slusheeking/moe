@@ -31,9 +31,9 @@ class PolygonClient:
         await self.disconnect()
     
     async def connect(self):
-        """Initialize HTTP session"""
+        """Initialize HTTP session with extended timeout"""
         if not self.session:
-            timeout = aiohttp.ClientTimeout(total=30)
+            timeout = aiohttp.ClientTimeout(total=60)  # Increased from 30 to 60 seconds
             self.session = aiohttp.ClientSession(timeout=timeout)
             logger.info("Polygon API client connected")
     
@@ -44,41 +44,74 @@ class PolygonClient:
             self.session = None
             logger.info("Polygon API client disconnected")
     
-    async def _make_request(self, endpoint: str, params: Dict = None) -> Optional[Dict]:
-        """Make rate-limited API request"""
+    async def _make_request(self, endpoint: str, params: Dict = None, retries: int = 2) -> Optional[Dict]:
+        """Make rate-limited API request with enhanced error handling"""
         if not self.session:
             await self.connect()
         
-        # Rate limiting
+        # More conservative rate limiting to prevent API issues
         time_since_last = time.time() - self.last_request_time
-        if time_since_last < self.rate_limit_delay:
-            await asyncio.sleep(self.rate_limit_delay - time_since_last)
+        min_delay = 0.2  # Increased from 0.1 to 0.2 seconds
+        if time_since_last < min_delay:
+            await asyncio.sleep(min_delay - time_since_last)
         
-        try:
-            url = f"{self.base_url}{endpoint}"
-            params = params or {}
-            params['apikey'] = self.api_key
-            
-            self.last_request_time = time.time()
-            
-            async with self.session.get(url, params=params) as response:
-                if response.status == 200:
-                    data = await response.json()
-                    return data
-                elif response.status == 429:  # Rate limited
-                    logger.warning("Rate limited, waiting 1 second...")
+        for attempt in range(retries + 1):
+            try:
+                url = f"{self.base_url}{endpoint}"
+                params = params or {}
+                params['apikey'] = self.api_key
+                
+                self.last_request_time = time.time()
+                
+                async with self.session.get(url, params=params) as response:
+                    if response.status == 200:
+                        data = await response.json()
+                        return data
+                    elif response.status == 429:  # Rate limited
+                        wait_time = min(2 ** attempt, 10)  # Exponential backoff up to 10s
+                        logger.warning(f"Rate limited, waiting {wait_time} seconds... (attempt {attempt + 1})")
+                        await asyncio.sleep(wait_time)
+                        continue  # Retry
+                    elif response.status == 404:  # Not found - common for delisted/invalid symbols
+                        logger.debug(f"Symbol not found (404) for {endpoint}")
+                        return None
+                    elif response.status in [500, 502, 503, 504]:  # Server errors - retry
+                        if attempt < retries:
+                            wait_time = min(2 ** attempt, 5)
+                            logger.warning(f"Server error {response.status}, retrying in {wait_time}s... (attempt {attempt + 1})")
+                            await asyncio.sleep(wait_time)
+                            continue
+                        else:
+                            logger.error(f"Server error {response.status} after {retries} retries: {endpoint}")
+                            return None
+                    else:
+                        error_text = await response.text()
+                        if attempt < retries:
+                            logger.warning(f"API error {response.status}, retrying... (attempt {attempt + 1})")
+                            await asyncio.sleep(1)
+                            continue
+                        else:
+                            logger.error(f"API error {response.status} after retries: {error_text[:200]}")
+                            return None
+                        
+            except asyncio.TimeoutError:
+                if attempt < retries:
+                    logger.debug(f"Request timeout, retrying... (attempt {attempt + 1})")
                     await asyncio.sleep(1)
-                    return await self._make_request(endpoint, params)
-                elif response.status == 404:  # Not found - common for delisted/invalid symbols
-                    logger.debug(f"Symbol not found (404) for {endpoint}")
-                    return None
+                    continue
                 else:
-                    logger.error(f"API error {response.status}: {await response.text()}")
+                    logger.warning(f"Request timeout after {retries} retries: {endpoint}")
                     return None
-                    
-        except Exception as e:
-            logger.error(f"Request failed for {endpoint}: {e}")
-            return None
+            except Exception as e:
+                if attempt < retries:
+                    logger.warning(f"Request failed, retrying... (attempt {attempt + 1}): {e}")
+                    await asyncio.sleep(1)
+                    continue
+                else:
+                    logger.error(f"Request failed after {retries} retries for {endpoint}: {e}")
+                    return None
+        
+        return None
     
     async def get_market_movers(self, direction: str = 'gainers') -> List[str]:
         """Get market gainers or losers for momentum universe"""
@@ -244,6 +277,132 @@ class PolygonClient:
             
         except Exception as e:
             logger.error(f"Failed to get previous close for {symbol}: {e}")
+            return None
+    
+    async def get_full_market_snapshot(self) -> List[Dict]:
+        """Get full market snapshot covering 10,000+ tickers in single request"""
+        try:
+            endpoint = "/v2/snapshot/locale/us/markets/stocks/tickers"
+            # No tickers parameter = get all tickers
+            data = await self._make_request(endpoint)
+            
+            if data and 'tickers' in data:
+                logger.info(f"Retrieved {len(data['tickers'])} tickers from full market snapshot")
+                return data['tickers']
+            
+            logger.warning("No ticker data in full market snapshot response")
+            return []
+            
+        except Exception as e:
+            logger.error(f"Failed to get full market snapshot: {e}")
+            return []
+    
+    async def scan_full_market_momentum(self) -> List[Dict]:
+        """Scan entire market for momentum signals using full snapshot"""
+        try:
+            logger.info("Getting full market snapshot (10,000+ tickers)...")
+            
+            # Get complete market snapshot in one request
+            market_data = await self.get_full_market_snapshot()
+            
+            if not market_data:
+                logger.warning("No market data available for momentum scan")
+                return []
+            
+            logger.info(f"Analyzing {len(market_data)} tickers for momentum signals...")
+            
+            momentum_candidates = []
+            
+            # Analyze each ticker for momentum
+            for ticker_data in market_data:
+                momentum_signal = self._analyze_momentum_signal(ticker_data)
+                if momentum_signal:
+                    momentum_candidates.append(momentum_signal)
+            
+            # Sort by momentum strength
+            momentum_candidates.sort(key=lambda x: x.get('momentum_score', 0), reverse=True)
+            
+            logger.info(f"Full market momentum scan complete: {len(momentum_candidates)} candidates found from {len(market_data)} tickers")
+            
+            return momentum_candidates[:500]  # Return top 500 momentum candidates
+            
+        except Exception as e:
+            logger.error(f"Full market momentum scan failed: {e}")
+            return []
+    
+    def _analyze_momentum_signal(self, ticker_data: Dict) -> Optional[Dict]:
+        """Analyze individual ticker for momentum signals"""
+        try:
+            symbol = ticker_data.get('ticker', '')
+            day_data = ticker_data.get('day', {})
+            prev_data = ticker_data.get('prevDay', {})
+            
+            if not symbol or not day_data or not prev_data:
+                return None
+            
+            # Current metrics
+            current_volume = day_data.get('v', 0)
+            current_price = day_data.get('c', 0)
+            price_change_pct = day_data.get('p', 0)
+            
+            # Previous day metrics
+            prev_volume = prev_data.get('v', 0)
+            prev_close = prev_data.get('c', 0)
+            
+            # Skip if missing critical data
+            if current_price <= 0 or prev_close <= 0 or current_volume <= 0:
+                return None
+            
+            # Apply basic filters
+            if current_price < 5 or current_price > 300:  # Price range filter
+                return None
+            
+            if current_volume < 100000:  # Minimum volume filter
+                return None
+            
+            # Calculate momentum signals
+            volume_ratio = current_volume / prev_volume if prev_volume > 0 else 1
+            momentum_score = 0
+            
+            # Price momentum (weighted heavily)
+            if price_change_pct > 5:  # 5%+ move
+                momentum_score += 30
+            elif price_change_pct > 3:  # 3%+ move
+                momentum_score += 20
+            elif price_change_pct > 1:  # 1%+ move
+                momentum_score += 10
+            
+            # Volume momentum
+            if volume_ratio > 3:  # 3x volume spike
+                momentum_score += 25
+            elif volume_ratio > 2:  # 2x volume spike
+                momentum_score += 15
+            elif volume_ratio > 1.5:  # 1.5x volume spike
+                momentum_score += 10
+            
+            # Price gap analysis
+            if prev_close > 0:
+                gap_pct = abs(current_price - prev_close) / prev_close
+                if gap_pct > 0.05:  # 5%+ gap
+                    momentum_score += 15
+                elif gap_pct > 0.03:  # 3%+ gap
+                    momentum_score += 10
+            
+            # Return candidate if momentum score is significant
+            if momentum_score >= 15:  # Minimum momentum threshold
+                return {
+                    'symbol': symbol,
+                    'momentum_score': momentum_score,
+                    'price_change_pct': price_change_pct,
+                    'volume_ratio': volume_ratio,
+                    'current_price': current_price,
+                    'current_volume': current_volume
+                }
+            
+            return None
+            
+        except Exception as e:
+            logger.debug(f"Momentum analysis failed for ticker: {e}")
             return None
 
 

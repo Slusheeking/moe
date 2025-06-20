@@ -198,7 +198,7 @@ class RiskManager:
             
             # Check trailing stop (5% from high)
             trailing_stop_pct = config.RISK_PARAMS['trailing_stop_pct']
-            stop_price = highest_price * (1 - trailing_stop_pct)
+            stop_price = highest_price * (1 - trailing_stop_pct / 100)
             
             if current_price <= stop_price:
                 return {

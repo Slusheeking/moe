@@ -49,8 +49,12 @@ class LiveMomentumDetector:
         self.model_path = 'live_momentum_model.pkl'
         self.scaler_path = 'live_momentum_scaler.pkl'
         
-        # Load existing model if available
+        # Load existing model if available (training is optional)
         self._load_model()
+        
+        # If no model exists, we'll train during first detection
+        if not self.is_trained:
+            logger.info("🔄 No pre-trained model found - will train on first momentum detection")
     
     def _load_model(self):
         """Load pre-trained model if available"""
@@ -100,6 +104,10 @@ class LiveMomentumDetector:
             bars = await self.polygon.list_aggs(
                 symbol, 1, 'day', start_date, current_time + timedelta(days=1), limit=30
             )
+            
+            # Debug: Check for data issues
+            if len(bars) > 0:
+                logger.debug(f"Feature extraction for {symbol}: {len(bars)} bars, latest close: ${bars[-1].close:.2f}")
             
             if len(bars) < 1:  # Work with minimal data (even 1 bar for IPOs)
                 return None
@@ -224,6 +232,224 @@ class LiveMomentumDetector:
             else:
                 features['dollar_volume_ratio'] = features['live_volume_spike']
             
+            # === ENHANCED PEAK/VALLEY DETECTION FEATURES ===
+            
+            # 13. LOCAL PEAK/VALLEY DETECTION (FIXED LOGIC)
+            if len(prices) >= 5:
+                # Detect if current price is a local peak or valley
+                is_peak = (prices[-1] > prices[-2] and prices[-2] > prices[-3] and
+                          prices[-1] > prices[-4] and prices[-1] > prices[-5])
+                is_valley = (prices[-1] < prices[-2] and prices[-2] < prices[-3] and
+                            prices[-1] < prices[-4] and prices[-1] < prices[-5])
+                
+                # INVERT PEAK LOGIC: Peak = BAD for buying, Valley = GOOD for buying
+                features['avoid_peak_signal'] = 1 if is_peak else 0  # HIGH = avoid buying
+                features['buy_valley_signal'] = 1 if is_valley else 0  # HIGH = good for buying
+                
+                # Distance from recent peak/valley (CORRECTED)
+                recent_max = np.max(prices[-10:]) if len(prices) >= 10 else np.max(prices)
+                recent_min = np.min(prices[-10:]) if len(prices) >= 10 else np.min(prices)
+                
+                # Higher distance from peak = BETTER for buying
+                features['safe_distance_from_peak'] = (recent_max - prices[-1]) / recent_max if recent_max > 0 else 0
+                # Lower distance from valley = BETTER for buying
+                features['close_to_valley'] = 1 - ((prices[-1] - recent_min) / (recent_max - recent_min)) if recent_max > recent_min else 0.5
+            else:
+                features['avoid_peak_signal'] = 0
+                features['buy_valley_signal'] = 0
+                features['safe_distance_from_peak'] = 0.5
+                features['close_to_valley'] = 0.5
+            
+            # 14. PRICE PATTERN RECOGNITION
+            if len(prices) >= 6:
+                # Higher highs, higher lows pattern (bullish)
+                recent_highs = [max(highs[i-1:i+2]) for i in range(2, len(highs)-2)]
+                recent_lows = [min(lows[i-1:i+2]) for i in range(2, len(lows)-2)]
+                
+                if len(recent_highs) >= 2:
+                    higher_highs = sum(1 for i in range(1, len(recent_highs)) if recent_highs[i] > recent_highs[i-1])
+                    higher_lows = sum(1 for i in range(1, len(recent_lows)) if recent_lows[i] > recent_lows[i-1])
+                    features['higher_highs_pattern'] = higher_highs / max(1, len(recent_highs)-1)
+                    features['higher_lows_pattern'] = higher_lows / max(1, len(recent_lows)-1)
+                else:
+                    features['higher_highs_pattern'] = 0
+                    features['higher_lows_pattern'] = 0
+                
+                # Price position within recent range
+                recent_range_high = np.max(highs[-6:])
+                recent_range_low = np.min(lows[-6:])
+                if recent_range_high > recent_range_low:
+                    position_in_range = (prices[-1] - recent_range_low) / (recent_range_high - recent_range_low)
+                    features['price_position_in_range'] = position_in_range
+                else:
+                    features['price_position_in_range'] = 0.5
+            else:
+                features['higher_highs_pattern'] = 0
+                features['higher_lows_pattern'] = 0
+                features['price_position_in_range'] = 0.5
+            
+            # 15. MOVING AVERAGE ANALYSIS
+            if len(prices) >= 5:
+                # Simple moving averages
+                ma_3 = np.mean(prices[-3:])
+                ma_5 = np.mean(prices[-5:])
+                
+                features['price_vs_ma3'] = (prices[-1] - ma_3) / ma_3
+                features['price_vs_ma5'] = (prices[-1] - ma_5) / ma_5
+                features['ma3_vs_ma5'] = (ma_3 - ma_5) / ma_5 if ma_5 > 0 else 0
+                
+                # MA slope (trend direction)
+                if len(prices) >= 7:
+                    ma_5_prev = np.mean(prices[-7:-2])
+                    features['ma5_slope'] = (ma_5 - ma_5_prev) / ma_5_prev if ma_5_prev > 0 else 0
+                else:
+                    features['ma5_slope'] = 0
+            else:
+                features['price_vs_ma3'] = 0
+                features['price_vs_ma5'] = 0
+                features['ma3_vs_ma5'] = 0
+                features['ma5_slope'] = 0
+            
+            # 16. BOLLINGER BAND POSITION
+            if len(prices) >= 10:
+                period = min(10, len(prices))
+                sma = np.mean(prices[-period:])
+                std = np.std(prices[-period:])
+                
+                upper_band = sma + (2 * std)
+                lower_band = sma - (2 * std)
+                
+                if upper_band > lower_band:
+                    features['bollinger_position'] = (prices[-1] - lower_band) / (upper_band - lower_band)
+                    features['bollinger_squeeze'] = std / sma if sma > 0 else 0
+                else:
+                    features['bollinger_position'] = 0.5
+                    features['bollinger_squeeze'] = 0
+                
+                # Bollinger breakout detection - use consistent naming
+                features['above_upper_bollinger'] = 1 if prices[-1] > upper_band else 0
+                features['below_lower_bollinger'] = 1 if prices[-1] < lower_band else 0
+            else:
+                features['bollinger_position'] = 0.5
+                features['bollinger_squeeze'] = 0
+                features['above_upper_bollinger'] = 0
+                features['below_lower_bollinger'] = 0
+            
+            # 17. RSI-LIKE MOMENTUM INDICATOR
+            if len(prices) >= 8:
+                price_changes = np.diff(prices[-8:])
+                gains = np.where(price_changes > 0, price_changes, 0)
+                losses = np.where(price_changes < 0, -price_changes, 0)
+                
+                avg_gain = np.mean(gains) if len(gains) > 0 else 0
+                avg_loss = np.mean(losses) if len(losses) > 0 else 0
+                
+                if avg_loss > 0:
+                    rs = avg_gain / avg_loss
+                    rsi = 100 - (100 / (1 + rs))
+                    features['rsi_momentum'] = rsi / 100  # Normalize to 0-1
+                else:
+                    features['rsi_momentum'] = 1.0 if avg_gain > 0 else 0.5
+            else:
+                features['rsi_momentum'] = 0.5
+            
+            # 18. FIBONACCI RETRACEMENT LEVELS
+            if len(prices) >= 10:
+                period_high = np.max(prices[-10:])
+                period_low = np.min(prices[-10:])
+                
+                if period_high > period_low:
+                    fib_range = period_high - period_low
+                    
+                    # Key Fibonacci levels
+                    fib_236 = period_high - (0.236 * fib_range)
+                    fib_382 = period_high - (0.382 * fib_range)
+                    fib_618 = period_high - (0.618 * fib_range)
+                    
+                    # Distance to nearest Fibonacci level
+                    fib_levels = [fib_236, fib_382, fib_618]
+                    distances = [abs(prices[-1] - level) / period_high for level in fib_levels]
+                    features['nearest_fib_distance'] = min(distances)
+                    
+                    # Which Fibonacci zone we're in
+                    if prices[-1] >= fib_236:
+                        features['fib_zone'] = 0.8  # Near high
+                    elif prices[-1] >= fib_382:
+                        features['fib_zone'] = 0.6  # Upper zone
+                    elif prices[-1] >= fib_618:
+                        features['fib_zone'] = 0.4  # Middle zone
+                    else:
+                        features['fib_zone'] = 0.2  # Lower zone
+                else:
+                    features['nearest_fib_distance'] = 0
+                    features['fib_zone'] = 0.5
+            else:
+                features['nearest_fib_distance'] = 0
+                features['fib_zone'] = 0.5
+            
+            # 19. SUPPORT/RESISTANCE ANALYSIS
+            if len(prices) >= 8:
+                # Find potential support/resistance levels
+                highs_recent = highs[-8:]
+                lows_recent = lows[-8:]
+                
+                # Count touches near current price (within 2%)
+                current_price = prices[-1]
+                tolerance = current_price * 0.02
+                
+                resistance_touches = sum(1 for h in highs_recent if abs(h - current_price) <= tolerance)
+                support_touches = sum(1 for l in lows_recent if abs(l - current_price) <= tolerance)
+                
+                features['resistance_strength'] = resistance_touches / len(highs_recent)
+                features['support_strength'] = support_touches / len(lows_recent)
+                
+                # Breakout potential
+                max_resistance = np.max(highs_recent)
+                min_support = np.min(lows_recent)
+                
+                # Support/Resistance analysis - use consistent naming
+                features['resistance_breakout_potential'] = 1 if current_price >= max_resistance * 0.98 else 0
+                features['support_breakdown_risk'] = 1 if current_price <= min_support * 1.02 else 0
+            else:
+                features['resistance_strength'] = 0
+                features['support_strength'] = 0
+                features['resistance_breakout_potential'] = 0
+                features['support_breakdown_risk'] = 0
+            
+            # 20. TREND REVERSAL INDICATORS
+            if len(prices) >= 6:
+                # Doji-like patterns (small body relative to range)
+                body_size = abs(prices[-1] - prices[-2]) if len(prices) >= 2 else 0
+                range_size = highs[-1] - lows[-1]
+                features['doji_pattern'] = 1 - (body_size / range_size) if range_size > 0 else 0
+                
+                # Hammer/shooting star patterns
+                if range_size > 0:
+                    upper_wick = highs[-1] - max(prices[-1], prices[-2] if len(prices) >= 2 else prices[-1])
+                    lower_wick = min(prices[-1], prices[-2] if len(prices) >= 2 else prices[-1]) - lows[-1]
+                    
+                    features['hammer_pattern'] = lower_wick / range_size
+                    features['shooting_star_pattern'] = upper_wick / range_size
+                else:
+                    features['hammer_pattern'] = 0
+                    features['shooting_star_pattern'] = 0
+                
+                # Divergence detection (price vs volume)
+                if len(volumes) >= 6:
+                    price_trend = (prices[-1] - prices[-6]) / prices[-6] if prices[-6] > 0 else 0
+                    volume_trend = (volumes[-1] - np.mean(volumes[-6:-1])) / np.mean(volumes[-6:-1]) if np.mean(volumes[-6:-1]) > 0 else 0
+                    
+                    # Positive divergence: price down, volume up (bullish)
+                    # Negative divergence: price up, volume down (bearish)
+                    features['price_volume_divergence'] = price_trend - (volume_trend * 0.1)  # Scale volume trend
+                else:
+                    features['price_volume_divergence'] = 0
+            else:
+                features['doji_pattern'] = 0
+                features['hammer_pattern'] = 0
+                features['shooting_star_pattern'] = 0
+                features['price_volume_divergence'] = 0
+            
             return features
             
         except Exception as e:
@@ -254,97 +480,75 @@ class LiveMomentumDetector:
             # QUALITY ANALYSIS - Check if this is a high-quality setup
             quality_analysis = await self._analyze_trade_quality(symbol, features, current_time)
             
-            # If model not trained, use simple rule-based scoring
-            if not self.is_trained:
+            # PRIORITIZE XGBOOST - trained on actual explosive moves like CRCL
+            if self.is_trained:
+                # Use trained XGBoost model (PRIMARY METHOD)
+                X = pd.DataFrame([features])[self.feature_names]
+                X_scaled = self.scaler.transform(X)
+                momentum_prob = self.model.predict_proba(X_scaled)[0, 1]
+                momentum_score = momentum_prob * 100  # Convert to 0-100 scale
+                
+                # Log raw XGBoost output for analysis
+                logger.debug(f"{symbol} XGBoost raw: prob={momentum_prob:.4f}, score={momentum_score:.1f}")
+                
+                # Apply quality adjustments to XGBoost score
+                adjusted_score = self._apply_quality_adjustments(momentum_score, quality_analysis)
+                
+                # Get top contributing features from XGBoost
+                top_factors = self._get_top_factors(features)
+                
+                return {
+                    'symbol': symbol,
+                    'momentum_score': adjusted_score,
+                    'original_score': momentum_score,
+                    'raw_xgboost_prob': momentum_prob,  # Include raw probability
+                    'raw_xgboost_score': momentum_score,  # Include raw 0-100 score
+                    'confidence': momentum_prob,
+                    'method': 'xgboost',
+                    'quality_analysis': quality_analysis,
+                    'top_factors': top_factors,
+                    'features': features,
+                    'timestamp': datetime.now()
+                }
+            else:
+                # Fallback to rule-based if model not trained
                 score = self._rule_based_scoring(features)
-                # Apply quality adjustments
                 adjusted_score = self._apply_quality_adjustments(score, quality_analysis)
                 
                 return {
                     'symbol': symbol,
                     'momentum_score': adjusted_score,
                     'original_score': score,
-                    'method': 'rule_based',
+                    'method': 'rule_based_fallback',
                     'quality_analysis': quality_analysis,
                     'features': features,
                     'timestamp': datetime.now()
                 }
-            
-            # Use trained XGBoost model
-            X = pd.DataFrame([features])[self.feature_names]
-            X_scaled = self.scaler.transform(X)
-            momentum_prob = self.model.predict_proba(X_scaled)[0, 1]
-            momentum_score = momentum_prob * 100
-            
-            # Apply quality adjustments to XGBoost score too
-            adjusted_score = self._apply_quality_adjustments(momentum_score, quality_analysis)
-            
-            # Get top contributing features
-            top_factors = self._get_top_factors(features)
-            
-            return {
-                'symbol': symbol,
-                'momentum_score': adjusted_score,
-                'original_score': momentum_score,
-                'confidence': momentum_prob,
-                'method': 'xgboost',
-                'quality_analysis': quality_analysis,
-                'top_factors': top_factors,
-                'features': features,
-                'timestamp': datetime.now()
-            }
             
         except Exception as e:
             logger.error(f"Momentum detection failed for {symbol}: {e}")
             return {'symbol': symbol, 'momentum_score': 0, 'error': str(e)}
     
     def _rule_based_scoring(self, features: Dict) -> float:
-        """AGGRESSIVE rule-based scoring for CRCL-type explosive moves"""
+        """Simplified rule-based scoring - minimal fallback when XGBoost unavailable"""
         score = 0
         
-        # DAILY Price velocity scoring (more aggressive for daily moves)
-        daily_velocity = features.get('live_velocity_1h', 0)  # Actually daily with our current setup
-        if daily_velocity > 0.25:  # 25%+ daily move = EXPLOSIVE
-            score += 60
-        elif daily_velocity > 0.15:  # 15%+ daily move = STRONG
-            score += 45
-        elif daily_velocity > 0.10:  # 10%+ daily move = MODERATE
-            score += 30
-        elif daily_velocity > 0.05:  # 5%+ daily move = WEAK
-            score += 15
+        # Simple price momentum (primary signal)
+        daily_velocity = features.get('live_velocity_1h', 0)
+        if daily_velocity > 0.05:  # 5%+ move
+            score += 40
         
-        # Volume explosion scoring (more aggressive)
+        # Volume confirmation
         volume_spike = features.get('live_volume_spike', 1)
-        if volume_spike > 3:  # 3x+ volume = EXPLOSIVE
+        if volume_spike > 1.5:  # 1.5x+ volume
             score += 30
-        elif volume_spike > 2:  # 2x+ volume = STRONG
-            score += 20
-        elif volume_spike > 1.5:  # 1.5x+ volume = MODERATE
-            score += 10
         
-        # Breakout scoring (more weight)
+        # New high breakout
         if features.get('new_3d_high', 0) == 1:
-            score += 25  # Increased from 20
+            score += 30
         
-        # Price acceleration (detect accelerating momentum)
-        acceleration = features.get('live_acceleration', 0)
-        if acceleration > 0.05:  # Strong acceleration
-            score += 20
-        elif acceleration > 0.02:  # Moderate acceleration
-            score += 10
-        
-        # 3-day momentum (longer term strength)
-        momentum_3d = features.get('momentum_3d', 0)
-        if momentum_3d > 0.30:  # 30%+ over 3 days
-            score += 25
-        elif momentum_3d > 0.15:  # 15%+ over 3 days
-            score += 15
-        
-        # Consecutive moves (momentum persistence)
-        consecutive = features.get('consecutive_up_periods', 0)
-        score += min(consecutive * 5, 20)  # Increased multiplier
-        
-        return min(score, 100)
+        # Ensure rule-based score stays within 0-100 range
+        return max(0, min(score, 100))
     
     def _validate_features(self, features: Dict) -> bool:
         """Validate feature quality to prevent fake signals during market closure"""
@@ -559,7 +763,11 @@ class LiveMomentumDetector:
                 'live_volume_spike', 'live_acceleration', 'live_range_expansion',
                 'new_3d_high', 'pct_from_3d_high', 'volume_vs_3d', 'momentum_3d',
                 'consecutive_up_periods', 'momentum_consistency', 'breakout_strength',
-                'volatility_surge', 'dollar_volume_ratio'
+                'volatility_surge', 'dollar_volume_ratio',
+                # CORRECTED PEAK/VALLEY FEATURES
+                'avoid_peak_signal', 'buy_valley_signal', 'safe_distance_from_peak', 'close_to_valley',
+                'price_position_in_range', 'above_upper_bollinger', 'below_lower_bollinger',
+                'resistance_breakout_potential', 'support_breakdown_risk'
             ]
         
         # Create synthetic positive examples by combining strong features
@@ -599,7 +807,7 @@ class LiveMomentumDetector:
         return augmented_features, augmented_labels
     
     async def _analyze_trade_quality(self, symbol: str, features: Dict, current_time: datetime) -> Dict:
-        """Analyze trade quality to filter out low-quality setups"""
+        """Analyze trade quality to filter out low-quality setups and avoid peak buying"""
         try:
             quality = {
                 'volume_consistency': 0.5,
@@ -607,6 +815,7 @@ class LiveMomentumDetector:
                 'trend_strength': 0.5,
                 'liquidity_score': 0.5,
                 'timing_score': 0.5,
+                'peak_avoidance_score': 0.5,
                 'overall_grade': 'C',
                 'penalties': [],
                 'bonuses': []
@@ -627,13 +836,79 @@ class LiveMomentumDetector:
                 highs = np.array([bar.high for bar in bars])
                 lows = np.array([bar.low for bar in bars])
                 
+                # === STRICT PEAK AVOIDANCE ANALYSIS ===
+                current_price = prices[-1]
+                daily_high = highs[-1]
+                daily_low = lows[-1]
+                
+                # 1. DAILY HIGH POSITION CHECK (STRICT)
+                if daily_high > daily_low:  # Avoid division by zero
+                    price_position = (current_price - daily_low) / (daily_high - daily_low)
+                    max_position = config.MOMENTUM_CONFIG['max_daily_high_position']
+                    
+                    if price_position > max_position:
+                        quality['penalties'].append(f'BLOCKED: Too close to daily high: {price_position:.1%} position (max: {max_position:.1%})')
+                        quality['peak_avoidance_score'] = 0.0  # Complete block
+                    elif price_position > 0.5:
+                        quality['penalties'].append(f'WARNING: Above 50% of daily range: {price_position:.1%}')
+                        quality['peak_avoidance_score'] = 0.3
+                    elif price_position < 0.3:
+                        quality['bonuses'].append(f'GOOD: Low in daily range: {price_position:.1%}')
+                        quality['peak_avoidance_score'] = 1.0
+                    else:
+                        quality['peak_avoidance_score'] = 0.6
+                
+                # 2. GAP UP CHECK
+                if len(prices) >= 2:
+                    gap_pct = (prices[-1] - prices[-2]) / prices[-2]
+                    max_gap_up = config.MOMENTUM_CONFIG.get('max_gap_up_pct', 0.03)
+                    
+                    if gap_pct > max_gap_up:
+                        quality['penalties'].append(f'BLOCKED: Gap up too large: {gap_pct:.1%} (max: {max_gap_up:.1%})')
+                        quality['peak_avoidance_score'] = min(quality['peak_avoidance_score'], 0.1)
+                
+                # 3. RECENT HIGH PULLBACK CHECK
+                if len(prices) >= 10:
+                    recent_high = np.max(prices[-10:])
+                    min_pullback = config.MOMENTUM_CONFIG.get('min_pullback_from_high', 0.10)
+                    pullback_from_high = (recent_high - current_price) / recent_high
+                    
+                    if pullback_from_high < min_pullback:
+                        quality['penalties'].append(f'BLOCKED: Too close to recent high - pullback: {pullback_from_high:.1%} (min: {min_pullback:.1%})')
+                        quality['peak_avoidance_score'] = min(quality['peak_avoidance_score'], 0.1)
+                    elif pullback_from_high > 0.05:
+                        quality['bonuses'].append(f'GOOD: Decent pullback from high: {pullback_from_high:.1%}')
+                
+                # 2. CONSOLIDATION CHECK
+                if len(prices) >= 5:
+                    recent_prices = prices[-5:]
+                    price_volatility = np.std(recent_prices) / np.mean(recent_prices)
+                    max_volatility = config.MOMENTUM_CONFIG['max_recent_volatility']
+                    
+                    if price_volatility > max_volatility:
+                        quality['penalties'].append(f'High recent volatility: {price_volatility:.2%}')
+                        quality['peak_avoidance_score'] *= 0.7
+                    else:
+                        quality['bonuses'].append('Good price consolidation')
+                        quality['peak_avoidance_score'] *= 1.1
+                
+                # 3. MOMENTUM DECELERATION CHECK
+                if config.MOMENTUM_CONFIG['avoid_momentum_deceleration']:
+                    acceleration = features.get('live_acceleration', 0)
+                    if acceleration < -0.01:  # Momentum is decelerating
+                        quality['penalties'].append(f'Momentum decelerating: {acceleration:.3f}')
+                        quality['peak_avoidance_score'] *= 0.6
+                    elif acceleration > 0.01:
+                        quality['bonuses'].append('Momentum accelerating')
+                        quality['peak_avoidance_score'] *= 1.1
+                
                 # 1. VOLUME CONSISTENCY CHECK
                 if len(volumes) >= 3:
                     recent_volume = volumes[-1]
                     avg_volume = np.mean(volumes[:-1])
                     volume_ratio = recent_volume / avg_volume if avg_volume > 0 else 1
                     
-                    # Penalize extreme volume spikes that might be unsustainable
+                    # More forgiving volume analysis - sometimes low volume precedes explosive moves
                     if volume_ratio > 10:  # 10x+ volume might be news-driven
                         quality['penalties'].append(f'Extreme volume spike: {volume_ratio:.1f}x')
                         quality['volume_consistency'] = 0.2
@@ -642,9 +917,11 @@ class LiveMomentumDetector:
                         quality['volume_consistency'] = 0.9
                     elif volume_ratio >= 1.5:  # Moderate volume
                         quality['volume_consistency'] = 0.7
-                    else:  # Low volume
+                    elif volume_ratio >= 0.8:  # Normal/slightly low volume (acceptable for momentum)
+                        quality['volume_consistency'] = 0.6
+                    else:  # Very low volume (still penalized but less severely)
                         quality['penalties'].append(f'Low volume: {volume_ratio:.1f}x')
-                        quality['volume_consistency'] = 0.3
+                        quality['volume_consistency'] = 0.4  # Reduced penalty from 0.3 to 0.4
                 
                 # 2. PRICE ACTION QUALITY
                 if len(prices) >= 3:
@@ -654,7 +931,20 @@ class LiveMomentumDetector:
                                           if (price_changes[i] > 0) != (price_changes[i-1] > 0))
                     choppiness = direction_changes / max(1, len(price_changes) - 1)
                     
-                    if choppiness > 0.6:  # Very choppy
+                    # Use config values for choppiness thresholds with momentum-based tolerance
+                    base_max_choppiness = config.MOMENTUM_CONFIG.get('max_price_choppiness', 0.6)
+                    
+                    # For high momentum, be more tolerant of choppiness (volatility can indicate explosive potential)
+                    # Get momentum score from features to adjust tolerance
+                    momentum_velocity = features.get('live_velocity_1h', 0) * 100  # Convert to percentage
+                    if momentum_velocity > 20:  # Very high momentum (20%+ moves)
+                        max_choppiness = base_max_choppiness * 2.0  # Double tolerance for explosive moves
+                    elif momentum_velocity > 10:  # High momentum (10%+ moves)
+                        max_choppiness = base_max_choppiness * 1.5  # 50% more tolerance
+                    else:
+                        max_choppiness = base_max_choppiness
+                    
+                    if choppiness > max_choppiness:  # Too choppy even with momentum adjustment
                         quality['penalties'].append(f'Choppy price action: {choppiness:.2f}')
                         quality['price_action_quality'] = 0.2
                     elif choppiness < 0.3:  # Clean trend
@@ -670,10 +960,13 @@ class LiveMomentumDetector:
                         correlation = np.corrcoef(x, prices)[0, 1]
                         r_squared = correlation ** 2
                         
+                        # Use config values for trend strength thresholds
+                        min_trend_strength = config.MOMENTUM_CONFIG.get('min_trend_strength', 0.6)
+                        
                         if r_squared > 0.8:  # Strong trend
                             quality['bonuses'].append(f'Strong trend: R²={r_squared:.2f}')
                             quality['trend_strength'] = 0.9
-                        elif r_squared > 0.6:  # Moderate trend
+                        elif r_squared > min_trend_strength:  # Moderate trend (uses config)
                             quality['trend_strength'] = 0.7
                         else:  # Weak trend
                             quality['penalties'].append(f'Weak trend: R²={r_squared:.2f}')
@@ -714,26 +1007,40 @@ class LiveMomentumDetector:
                 logger.debug(f"Quality analysis data error for {symbol}: {e}")
                 quality['penalties'].append('Data quality issues')
             
-            # Calculate overall grade
-            scores = [
+            # Calculate overall grade with PEAK AVOIDANCE AS PRIMARY FILTER
+            base_scores = [
                 quality['volume_consistency'],
                 quality['price_action_quality'],
                 quality['trend_strength'],
                 quality['liquidity_score'],
                 quality['timing_score']
             ]
-            avg_score = np.mean(scores)
             
-            if avg_score >= 0.8:
+            # Peak avoidance is now the PRIMARY filter (weighted 5x)
+            peak_score = quality['peak_avoidance_score']
+            weighted_scores = base_scores + [peak_score] * 5  # 5x weight for peak avoidance
+            avg_score = np.mean(weighted_scores)
+            
+            # ULTRA-STRICT grading - peak avoidance must be excellent
+            if peak_score >= 0.8 and avg_score >= 0.75:
                 quality['overall_grade'] = 'A'
-            elif avg_score >= 0.7:
+            elif peak_score >= 0.6 and avg_score >= 0.65:
                 quality['overall_grade'] = 'B'
-            elif avg_score >= 0.6:
+            elif peak_score >= 0.5 and avg_score >= 0.55:
                 quality['overall_grade'] = 'C'
-            elif avg_score >= 0.4:
-                quality['overall_grade'] = 'D'
             else:
                 quality['overall_grade'] = 'F'
+            
+            # CRITICAL: Auto-fail if ANY peak avoidance issue
+            if peak_score < 0.5:
+                quality['overall_grade'] = 'F'
+                quality['penalties'].append('CRITICAL: Failed strict peak avoidance check')
+            
+            # Additional auto-fail conditions for peak buying
+            penalties_str = ' '.join(quality['penalties'])
+            if 'BLOCKED:' in penalties_str:
+                quality['overall_grade'] = 'F'
+                quality['penalties'].append('BLOCKED: Peak buying protection activated')
             
             return quality
             
@@ -751,42 +1058,31 @@ class LiveMomentumDetector:
             }
     
     def _apply_quality_adjustments(self, momentum_score: float, quality_analysis: Dict) -> float:
-        """Apply quality adjustments to momentum score"""
+        """Minimal quality adjustments - trust XGBoost predictions"""
         try:
             adjusted_score = momentum_score
             
-            # Grade-based adjustments
-            grade_multipliers = {
-                'A': 1.2,   # 20% bonus for excellent quality
-                'B': 1.1,   # 10% bonus for good quality
-                'C': 1.0,   # No adjustment for average quality
-                'D': 0.8,   # 20% penalty for poor quality
-                'F': 0.5    # 50% penalty for failing quality
-            }
-            
+            # Only apply severe penalty for completely failed analysis
             grade = quality_analysis.get('overall_grade', 'C')
-            adjusted_score *= grade_multipliers.get(grade, 1.0)
+            if grade == 'F':
+                adjusted_score *= 0.8  # Light penalty for failed quality
             
-            # Penalty adjustments
-            penalty_count = len(quality_analysis.get('penalties', []))
-            if penalty_count > 3:  # Multiple quality issues
-                adjusted_score *= 0.7  # Additional 30% penalty
-            elif penalty_count > 1:  # Some quality issues
-                adjusted_score *= 0.85  # Additional 15% penalty
+            # Only penalize for critical blocking issues
+            penalties = quality_analysis.get('penalties', [])
+            critical_penalties = ['Analysis failed', 'Too close to daily high']
+            has_critical = any(critical in penalty for penalty in penalties for critical in critical_penalties)
             
-            # Bonus adjustments
-            bonus_count = len(quality_analysis.get('bonuses', []))
-            if bonus_count > 2:  # Multiple positive factors
-                adjusted_score *= 1.15  # Additional 15% bonus
+            if has_critical:
+                adjusted_score *= 0.9  # Light penalty for critical issues
             
-            # Ensure score doesn't go negative or exceed reasonable bounds
-            adjusted_score = max(0, min(adjusted_score, 150))
+            # Ensure score stays within 0-100 scale
+            adjusted_score = max(0, min(adjusted_score, 100))
             
             return adjusted_score
             
         except Exception as e:
             logger.error(f"Quality adjustment failed: {e}")
-            return momentum_score * 0.5  # Conservative penalty if adjustment fails
+            return momentum_score  # Return original score if adjustment fails
     
     async def _get_future_return(self, symbol: str, date: datetime, days: int = 3) -> Optional[float]:
         """Get future return for labeling"""
