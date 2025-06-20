@@ -1,0 +1,93 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+trading_system.log
+performance_metrics.jsonl
+
+# Model Cache
+.cache/
+~/.cache/huggingface/
+models/
+
+# Data
+data/
+*.csv
+*.json
+*.parquet
+
+# Temporary files
+*.tmp
+*.temp
+.temp/
+
+# API Keys and Secrets
+api_keys.txt
+secrets.json
+credentials/
+
+# Trading specific
+positions.json
+trades.json
+backtest_results/
+live_trades/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# PyTest
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
