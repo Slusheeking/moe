@@ -150,14 +150,7 @@ momentum_trading.log
 execution_logs/
 
 # Data files
-*.csv
-*.json
-*.pkl
-*.pickle
-data/
-market_data/
-historical_data/
-backtest_results/
+
 
 # GPU Cache
 *.cubin
