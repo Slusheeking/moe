@@ -1,0 +1,6016 @@
+{
+  "metadata": {
+    "index": "Russell 1000",
+    "as_of_date": "2025-05-01",
+    "total_companies": 1000,
+    "description": "Components of the Russell 1000 Index as of May 1, 2025"
+  },
+  "companies": [
+    {
+      "company": "10x Genomics",
+      "symbol": "TXG",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Technology"
+    },
+    {
+      "company": "3M",
+      "symbol": "MMM",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Conglomerates"
+    },
+    {
+      "company": "A. O. Smith",
+      "symbol": "AOS",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Building Products"
+    },
+    {
+      "company": "AAON",
+      "symbol": "AAON",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Building Products"
+    },
+    {
+      "company": "Abbott Laboratories",
+      "symbol": "ABT",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Equipment"
+    },
+    {
+      "company": "AbbVie",
+      "symbol": "ABBV",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Pharmaceuticals"
+    },
+    {
+      "company": "Acadia Healthcare",
+      "symbol": "ACHC",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Facilities"
+    },
+    {
+      "company": "Accenture",
+      "symbol": "ACN",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "IT Consulting & Other Services"
+    },
+    {
+      "company": "Acuity Brands",
+      "symbol": "AYI",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Electrical Components & Equipment"
+    },
+    {
+      "company": "Adobe Inc.",
+      "symbol": "ADBE",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Application Software"
+    },
+    {
+      "company": "ADT Inc.",
+      "symbol": "ADT",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Advance Auto Parts",
+      "symbol": "AAP",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Automotive Retail"
+    },
+    {
+      "company": "Advanced Drainage Systems",
+      "symbol": "WMS",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Advanced Micro Devices",
+      "symbol": "AMD",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Semiconductors"
+    },
+    {
+      "company": "AECOM",
+      "symbol": "ACM",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Construction & Engineering"
+    },
+    {
+      "company": "AES Corporation",
+      "symbol": "AES",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Independent Power Producers & Energy Traders"
+    },
+    {
+      "company": "Affiliated Managers Group",
+      "symbol": "AMG",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Asset Management & Custody Banks"
+    },
+    {
+      "company": "Affirm Holdings",
+      "symbol": "AFRM",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Aflac",
+      "symbol": "AFL",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Life & Health Insurance"
+    },
+    {
+      "company": "AGCO",
+      "symbol": "AGCO",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Agricultural & Farm Machinery"
+    },
+    {
+      "company": "Agilent Technologies",
+      "symbol": "A",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Equipment"
+    },
+    {
+      "company": "Agree Realty",
+      "symbol": "ADC",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "AGNC Investment",
+      "symbol": "AGNC",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Air Lease Corporation",
+      "symbol": "AL",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Air Products",
+      "symbol": "APD",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Industrial Gases"
+    },
+    {
+      "company": "Airbnb",
+      "symbol": "ABNB",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Hotels, Resorts & Cruise lines"
+    },
+    {
+      "company": "Akamai Technologies",
+      "symbol": "AKAM",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Internet Services & Infrastructure"
+    },
+    {
+      "company": "Alaska Air Group",
+      "symbol": "ALK",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Passenger Airlines"
+    },
+    {
+      "company": "Albemarle Corporation",
+      "symbol": "ALB",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Specialty Chemicals"
+    },
+    {
+      "company": "Albertsons",
+      "symbol": "ACI",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Food Retail"
+    },
+    {
+      "company": "Alcoa",
+      "symbol": "AA",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Aluminum"
+    },
+    {
+      "company": "Alexandria Real Estate Equities",
+      "symbol": "ARE",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Office REITs"
+    },
+    {
+      "company": "Align Technology",
+      "symbol": "ALGN",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Supplies"
+    },
+    {
+      "company": "Allegion",
+      "symbol": "ALLE",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Building Products"
+    },
+    {
+      "company": "Allegro MicroSystems",
+      "symbol": "ALGM",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Alliant Energy",
+      "symbol": "LNT",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Electric Utilities"
+    },
+    {
+      "company": "Allison Transmission",
+      "symbol": "ALSN",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Allstate",
+      "symbol": "ALL",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Property & Casualty Insurance"
+    },
+    {
+      "company": "Ally Financial",
+      "symbol": "ALLY",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Alnylam Pharmaceuticals",
+      "symbol": "ALNY",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Alphabet (Class A)",
+      "symbol": "GOOGL",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Interactive Media & Services"
+    },
+    {
+      "company": "Alphabet (Class C)",
+      "symbol": "GOOG",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Interactive Media & Services"
+    },
+    {
+      "company": "Altria",
+      "symbol": "MO",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Tobacco"
+    },
+    {
+      "company": "Amazon",
+      "symbol": "AMZN",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Broadline Retail"
+    },
+    {
+      "company": "Amcor",
+      "symbol": "AMCR",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Paper & Plastic Packaging Products & Materials"
+    },
+    {
+      "company": "Amdocs",
+      "symbol": "DOX",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Amedisys",
+      "symbol": "AMED",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Services"
+    },
+    {
+      "company": "Amentum",
+      "symbol": "AMTM",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Diversified Support Services"
+    },
+    {
+      "company": "Amer Sports",
+      "symbol": "AS",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Leisure Products"
+    },
+    {
+      "company": "Ameren",
+      "symbol": "AEE",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Multi-Utilities"
+    },
+    {
+      "company": "American Airlines Group",
+      "symbol": "AAL",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Passenger Airlines"
+    },
+    {
+      "company": "American Electric Power",
+      "symbol": "AEP",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Electric Utilities"
+    },
+    {
+      "company": "American Express",
+      "symbol": "AXP",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Consumer Finance"
+    },
+    {
+      "company": "American Financial Group",
+      "symbol": "AFG",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Multi-line Insurance"
+    },
+    {
+      "company": "American Homes 4 Rent",
+      "symbol": "AMH",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "American International Group",
+      "symbol": "AIG",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Property & Casualty Insurance"
+    },
+    {
+      "company": "American Tower",
+      "symbol": "AMT",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Telecom Tower REITs"
+    },
+    {
+      "company": "American Water Works",
+      "symbol": "AWK",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Water Utilities"
+    },
+    {
+      "company": "Americold",
+      "symbol": "COLD",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Ameriprise Financial",
+      "symbol": "AMP",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Asset Management & Custody Banks"
+    },
+    {
+      "company": "Ametek",
+      "symbol": "AME",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Electrical Components & Equipment"
+    },
+    {
+      "company": "Amgen",
+      "symbol": "AMGN",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Biotechnology"
+    },
+    {
+      "company": "Amkor Technology",
+      "symbol": "AMKR",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Semiconductors"
+    },
+    {
+      "company": "Amphenol",
+      "symbol": "APH",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Electronic Components"
+    },
+    {
+      "company": "Analog Devices",
+      "symbol": "ADI",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Semiconductors"
+    },
+    {
+      "company": "Angi Inc.",
+      "symbol": "ANGI",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Advertising"
+    },
+    {
+      "company": "Annaly Capital Management",
+      "symbol": "NLY",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Ansys",
+      "symbol": "ANSS",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Application Software"
+    },
+    {
+      "company": "Antero Midstream",
+      "symbol": "AM",
+      "gics_sector": "Energy",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Antero Resources",
+      "symbol": "AR",
+      "gics_sector": "Energy",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "AON",
+      "symbol": "AON",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Insurance Brokers"
+    },
+    {
+      "company": "APA Corporation",
+      "symbol": "APA",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Oil & Gas Exploration & Production"
+    },
+    {
+      "company": "APi Group",
+      "symbol": "APG",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Construction & Engineering"
+    },
+    {
+      "company": "Apellis Pharmaceuticals",
+      "symbol": "APLS",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Biotechnology"
+    },
+    {
+      "company": "Apollo Global Management",
+      "symbol": "APO",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Asset Management & Custody Banks"
+    },
+    {
+      "company": "AppFolio",
+      "symbol": "APPF",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Application Software"
+    },
+    {
+      "company": "Apple Inc.",
+      "symbol": "AAPL",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Technology Hardware, Storage & Peripherals"
+    },
+    {
+      "company": "Applied Materials",
+      "symbol": "AMAT",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Semiconductor Materials & Equipment"
+    },
+    {
+      "company": "AppLovin",
+      "symbol": "APP",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Application Software"
+    },
+    {
+      "company": "AptarGroup",
+      "symbol": "ATR",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Metal, Glass & Plastic Containers"
+    },
+    {
+      "company": "Aptiv",
+      "symbol": "APTV",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Automotive Parts & Equipment"
+    },
+    {
+      "company": "Aramark",
+      "symbol": "ARMK",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Arch Capital Group",
+      "symbol": "ACGL",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Reinsurance"
+    },
+    {
+      "company": "Archer Daniels Midland",
+      "symbol": "ADM",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Agricultural Products & Services"
+    },
+    {
+      "company": "Ares Management",
+      "symbol": "ARES",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Arista Networks",
+      "symbol": "ANET",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Communications Equipment"
+    },
+    {
+      "company": "Armstrong World Industries",
+      "symbol": "AWI",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Arrow Electronics",
+      "symbol": "ARW",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Technology Distributors"
+    },
+    {
+      "company": "Arthur J. Gallagher & Co.",
+      "symbol": "AJG",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Insurance Brokers"
+    },
+    {
+      "company": "Ashland Global",
+      "symbol": "ASH",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Diversified Chemicals"
+    },
+    {
+      "company": "Assurant",
+      "symbol": "AIZ",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Multi-line Insurance"
+    },
+    {
+      "company": "Assured Guaranty",
+      "symbol": "AGO",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Astera Labs",
+      "symbol": "ALAB",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Semiconductors"
+    },
+    {
+      "company": "AT&T",
+      "symbol": "T",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Integrated Telecommunication Services"
+    },
+    {
+      "company": "ATI Inc.",
+      "symbol": "ATI",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Aerospace & Defense"
+    },
+    {
+      "company": "Atlassian",
+      "symbol": "TEAM",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Application Software"
+    },
+    {
+      "company": "Atmos Energy",
+      "symbol": "ATO",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Gas Utilities"
+    },
+    {
+      "company": "Autodesk",
+      "symbol": "ADSK",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Application Software"
+    },
+    {
+      "company": "Automatic Data Processing",
+      "symbol": "ADP",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Human Resource & Employment Services"
+    },
+    {
+      "company": "AutoNation",
+      "symbol": "AN",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Automotive Retail"
+    },
+    {
+      "company": "AutoZone",
+      "symbol": "AZO",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Automotive Retail"
+    },
+    {
+      "company": "AvalonBay Communities",
+      "symbol": "AVB",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Residential REITs"
+    },
+    {
+      "company": "Avantor",
+      "symbol": "AVTR",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Avery Dennison",
+      "symbol": "AVY",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Paper & Plastic Packaging Products & Materials"
+    },
+    {
+      "company": "Avis Budget Group",
+      "symbol": "CAR",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Passenger Ground Transportation"
+    },
+    {
+      "company": "Avnet",
+      "symbol": "AVT",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Technology Distributors"
+    },
+    {
+      "company": "Axalta",
+      "symbol": "AXTA",
+      "gics_sector": "Materials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "AXIS Capital",
+      "symbol": "AXS",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Axon Enterprise",
+      "symbol": "AXON",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Aerospace & Defense"
+    },
+    {
+      "company": "Azek",
+      "symbol": "AZEK",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Azenta",
+      "symbol": "AZTA",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Life Sciences Tools & Services"
+    },
+    {
+      "company": "Baker Hughes",
+      "symbol": "BKR",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Oil & Gas Equipment & Services"
+    },
+    {
+      "company": "Ball Corporation",
+      "symbol": "BALL",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Metal, Glass & Plastic Containers"
+    },
+    {
+      "company": "Bank of America",
+      "symbol": "BAC",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Diversified Banks"
+    },
+    {
+      "company": "Bank OZK",
+      "symbol": "OZK",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Regional Banks"
+    },
+    {
+      "company": "Bath & Body Works, Inc.",
+      "symbol": "BBWI",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Other Specialty Retail"
+    },
+    {
+      "company": "Baxter International",
+      "symbol": "BAX",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Equipment"
+    },
+    {
+      "company": "Becton Dickinson",
+      "symbol": "BDX",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Equipment"
+    },
+    {
+      "company": "BellRing Brands",
+      "symbol": "BRBR",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Packaged Foods & Meats"
+    },
+    {
+      "company": "Bentley Systems",
+      "symbol": "BSY",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Berkshire Hathaway",
+      "symbol": "BRK.B",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Multi-Sector Holdings"
+    },
+    {
+      "company": "Best Buy",
+      "symbol": "BBY",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Computer & Electronics Retail"
+    },
+    {
+      "company": "Bill.com",
+      "symbol": "BILL",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Bio-Rad Laboratories",
+      "symbol": "BIO",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Life Sciences Tools & Services"
+    },
+    {
+      "company": "Bio-Techne",
+      "symbol": "TECH",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Life Sciences Tools & Services"
+    },
+    {
+      "company": "Biogen",
+      "symbol": "BIIB",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Biotechnology"
+    },
+    {
+      "company": "BioMarin Pharmaceutical",
+      "symbol": "BMRN",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Birkenstock",
+      "symbol": "BIRK",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Footwear"
+    },
+    {
+      "company": "BJ's Wholesale Club",
+      "symbol": "BJ",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Hypermarkets & Super Centers"
+    },
+    {
+      "company": "BlackRock",
+      "symbol": "BLK",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Asset Management & Custody Banks"
+    },
+    {
+      "company": "Blackstone Inc.",
+      "symbol": "BX",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Asset Management & Custody Banks"
+    },
+    {
+      "company": "H&R Block",
+      "symbol": "HRB",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Specialized Consumer Services"
+    },
+    {
+      "company": "Block, Inc.",
+      "symbol": "XYZ",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Transaction & Payment Processing Services"
+    },
+    {
+      "company": "Blue Owl Capital",
+      "symbol": "OWL",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "BNY Mellon",
+      "symbol": "BK",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Asset Management & Custody Banks"
+    },
+    {
+      "company": "Boeing",
+      "symbol": "BA",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Aerospace & Defense"
+    },
+    {
+      "company": "BOK Financial Corporation",
+      "symbol": "BOKF",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Booking Holdings",
+      "symbol": "BKNG",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Hotels, Resorts & Cruise Lines"
+    },
+    {
+      "company": "Booz Allen Hamilton",
+      "symbol": "BAH",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "BorgWarner",
+      "symbol": "BWA",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Automotive Parts & Equipment"
+    },
+    {
+      "company": "Boston Beer Company",
+      "symbol": "SAM",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Brewers"
+    },
+    {
+      "company": "Boston Scientific",
+      "symbol": "BSX",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Equipment"
+    },
+    {
+      "company": "Boyd Gaming",
+      "symbol": "BYD",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Casinos & Gaming"
+    },
+    {
+      "company": "Bright Horizons",
+      "symbol": "BFAM",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Brighthouse Financial",
+      "symbol": "BHF",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Life & Health Insurance"
+    },
+    {
+      "company": "Bristol Myers Squibb",
+      "symbol": "BMY",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Distributors"
+    },
+    {
+      "company": "Brixmor Property Group",
+      "symbol": "BRX",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Retail REITs"
+    },
+    {
+      "company": "Broadcom",
+      "symbol": "AVGO",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Semiconductors"
+    },
+    {
+      "company": "Broadridge Financial Solutions",
+      "symbol": "BR",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Data Processing & Outsourced Services"
+    },
+    {
+      "company": "Brookfield Renewable Partners",
+      "symbol": "BEPC",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Brown & Brown",
+      "symbol": "BRO",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Insurance Brokers"
+    },
+    {
+      "company": "Brown–Forman (Class A)",
+      "symbol": "BF.A",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Distillers & Vintners"
+    },
+    {
+      "company": "Brown–Forman (Class B)",
+      "symbol": "BF.B",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Distillers & Vintners"
+    },
+    {
+      "company": "Bruker",
+      "symbol": "BRKR",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Equipment"
+    },
+    {
+      "company": "Brunswick Corporation",
+      "symbol": "BC",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Leisure Products"
+    },
+    {
+      "company": "Builders FirstSource",
+      "symbol": "BLDR",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Building Products"
+    },
+    {
+      "company": "Bunge Global",
+      "symbol": "BG",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Agricultural Products & Services"
+    },
+    {
+      "company": "Burlington Stores",
+      "symbol": "BURL",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "BWX Technologies",
+      "symbol": "BWXT",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "BXP, Inc.",
+      "symbol": "BXP",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Office REITs"
+    },
+    {
+      "company": "C.H. Robinson",
+      "symbol": "CHRW",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Air Freight & Logistics"
+    },
+    {
+      "company": "CACI",
+      "symbol": "CACI",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Diversified Support Services"
+    },
+    {
+      "company": "Cadence Design Systems",
+      "symbol": "CDNS",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Application Software"
+    },
+    {
+      "company": "Caesars Entertainment",
+      "symbol": "CZR",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Casinos & Gaming"
+    },
+    {
+      "company": "Camden Property Trust",
+      "symbol": "CPT",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Residential REITs"
+    },
+    {
+      "company": "Campbell Soup Company",
+      "symbol": "CPB",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Packaged Foods & Meats"
+    },
+    {
+      "company": "Capital One",
+      "symbol": "COF",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Consumer Finance"
+    },
+    {
+      "company": "Capri Holdings",
+      "symbol": "CPRI",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Apparel, Accessories & Luxury Goods"
+    },
+    {
+      "company": "Cardinal Health",
+      "symbol": "CAH",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Distributors"
+    },
+    {
+      "company": "Carlisle Companies",
+      "symbol": "CSL",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Conglomerates"
+    },
+    {
+      "company": "Carlyle Group (The)",
+      "symbol": "CG",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "CarMax",
+      "symbol": "KMX",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Automotive Retail"
+    },
+    {
+      "company": "Carnival Corporation & plc",
+      "symbol": "CCL",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Hotels, Resorts & Cruise Lines"
+    },
+    {
+      "company": "Carrier Global",
+      "symbol": "CARR",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Building Products"
+    },
+    {
+      "company": "Carter's",
+      "symbol": "CRI",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Apparel, Accessories & Luxury Goods"
+    },
+    {
+      "company": "Carvana",
+      "symbol": "CVNA",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Automotive Retail"
+    },
+    {
+      "company": "Casey's",
+      "symbol": "CASY",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Food Retail"
+    },
+    {
+      "company": "Caterpillar Inc.",
+      "symbol": "CAT",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Construction Machinery & Heavy Transportation Equipment"
+    },
+    {
+      "company": "Cava Group",
+      "symbol": "CAVA",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Restaurants"
+    },
+    {
+      "company": "Cboe Global Markets",
+      "symbol": "CBOE",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Financial Exchanges & Data"
+    },
+    {
+      "company": "CBRE Group",
+      "symbol": "CBRE",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Real Estate Services"
+    },
+    {
+      "company": "CCC Intelligent Solutions",
+      "symbol": "CCCS",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "CDW",
+      "symbol": "CDW",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Technology Distributors"
+    },
+    {
+      "company": "Celanese",
+      "symbol": "CE",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Specialty Chemicals"
+    },
+    {
+      "company": "Celsius Holdings",
+      "symbol": "CELH",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Soft Drinks & Non-alcoholic Beverages"
+    },
+    {
+      "company": "Cencora",
+      "symbol": "COR",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Distributors"
+    },
+    {
+      "company": "Centene",
+      "symbol": "CNC",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Managed Health Care"
+    },
+    {
+      "company": "Centerpoint Energy",
+      "symbol": "CNP",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Multi-Utilities"
+    },
+    {
+      "company": "Certara, Inc.",
+      "symbol": "CERT",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "CF Industries",
+      "symbol": "CF",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Fertilizers & Agricultural Chemicals"
+    },
+    {
+      "company": "Charles River Laboratories",
+      "symbol": "CRL",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Life Sciences Tools & Services"
+    },
+    {
+      "company": "Charles Schwab Corporation",
+      "symbol": "SCHW",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Investment Banking & Brokerage"
+    },
+    {
+      "company": "Charter Communications",
+      "symbol": "CHTR",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Cable & Satellite"
+    },
+    {
+      "company": "Chemed Corporation",
+      "symbol": "CHE",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Services"
+    },
+    {
+      "company": "Chemours",
+      "symbol": "CC",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Diversified Chemicals"
+    },
+    {
+      "company": "Cheniere Energy",
+      "symbol": "LNG",
+      "gics_sector": "Energy",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Chevron Corporation",
+      "symbol": "CVX",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Integrated Oil & Gas"
+    },
+    {
+      "company": "Chipotle Mexican Grill",
+      "symbol": "CMG",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Restaurants"
+    },
+    {
+      "company": "Choice Hotels",
+      "symbol": "CHH",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Hotels, Resorts & Cruise Lines"
+    },
+    {
+      "company": "Chord Energy",
+      "symbol": "CHRD",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Oil & Gas Exploration & Production"
+    },
+    {
+      "company": "Chubb Limited",
+      "symbol": "CB",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Property & Casualty Insurance"
+    },
+    {
+      "company": "Church & Dwight",
+      "symbol": "CHD",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Household Products"
+    },
+    {
+      "company": "Churchill Downs Incorporated",
+      "symbol": "CHDN",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Casinos & Gaming"
+    },
+    {
+      "company": "Ciena",
+      "symbol": "CIEN",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Communications Equipment"
+    },
+    {
+      "company": "Cigna",
+      "symbol": "CI",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Managed Health Care"
+    },
+    {
+      "company": "Cincinnati Financial",
+      "symbol": "CINF",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Property & Casualty Insurance"
+    },
+    {
+      "company": "Cintas",
+      "symbol": "CTAS",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Diversified Support Services"
+    },
+    {
+      "company": "Cirrus Logic",
+      "symbol": "CRUS",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Semiconductors"
+    },
+    {
+      "company": "Cisco",
+      "symbol": "CSCO",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Communications Equipment"
+    },
+    {
+      "company": "Citigroup",
+      "symbol": "C",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Diversified Banks"
+    },
+    {
+      "company": "Citizens Financial Group",
+      "symbol": "CFG",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Regional Banks"
+    },
+    {
+      "company": "Civitas Resources",
+      "symbol": "CIVI",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Oil & Gas Exploration & Production"
+    },
+    {
+      "company": "Clarivate",
+      "symbol": "CLVT",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Clean Harbors",
+      "symbol": "CLH",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Environmental & Facilities Services"
+    },
+    {
+      "company": "Clearway Energy (Class A)",
+      "symbol": "CWEN.A",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Clearway Energy (Class C)",
+      "symbol": "CWEN",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Cleveland-Cliffs",
+      "symbol": "CLF",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Steel"
+    },
+    {
+      "company": "Clorox",
+      "symbol": "CLX",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Household Products"
+    },
+    {
+      "company": "Cloudflare",
+      "symbol": "NET",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "CME Group",
+      "symbol": "CME",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Financial Exchanges & Data"
+    },
+    {
+      "company": "CMS Energy",
+      "symbol": "CMS",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Multi-Utilities"
+    },
+    {
+      "company": "CNA Financial",
+      "symbol": "CNA",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "CNH Industrial",
+      "symbol": "CNH",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Coca-Cola Company (The)",
+      "symbol": "KO",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Soft Drinks & Non-alcoholic Beverages"
+    },
+    {
+      "company": "Coca-Cola Consolidated",
+      "symbol": "COKE",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Soft Drinks & Non-alcoholic Beverages"
+    },
+    {
+      "company": "Cognex Corporation",
+      "symbol": "CGNX",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Electronic Equipment & Instruments"
+    },
+    {
+      "company": "Cognizant",
+      "symbol": "CTSH",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "IT Consulting & Other Services"
+    },
+    {
+      "company": "Coherent Corp.",
+      "symbol": "COHR",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Electronic Components"
+    },
+    {
+      "company": "Coinbase",
+      "symbol": "COIN",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Colgate-Palmolive",
+      "symbol": "CL",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Household Products"
+    },
+    {
+      "company": "Columbia Banking System",
+      "symbol": "COLB",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Regional Banks"
+    },
+    {
+      "company": "Columbia Sportswear",
+      "symbol": "COLM",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Apparel, Accessories & Luxury Goods"
+    },
+    {
+      "company": "Comcast",
+      "symbol": "CMCSA",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Cable & Satellite"
+    },
+    {
+      "company": "Comerica",
+      "symbol": "CMA",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Diversified Banks"
+    },
+    {
+      "company": "Comfort Systems USA",
+      "symbol": "FIX",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Construction & Engineering"
+    },
+    {
+      "company": "Commerce Bancshares",
+      "symbol": "CBSH",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Regional Banks"
+    },
+    {
+      "company": "Conagra Brands",
+      "symbol": "CAG",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Packaged Foods & Meats"
+    },
+    {
+      "company": "Concentrix",
+      "symbol": "CNXC",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Data Processing & Outsourced Services"
+    },
+    {
+      "company": "Confluent, Inc.",
+      "symbol": "CFLT",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "ConocoPhillips",
+      "symbol": "COP",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Oil & Gas Exploration & Production"
+    },
+    {
+      "company": "Consolidated Edison",
+      "symbol": "ED",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Electric Utilities"
+    },
+    {
+      "company": "Constellation Brands",
+      "symbol": "STZ",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Distillers & Vintners"
+    },
+    {
+      "company": "Constellation Energy",
+      "symbol": "CEG",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Multi-Utilities"
+    },
+    {
+      "company": "Cooper Companies (The)",
+      "symbol": "COO",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Supplies"
+    },
+    {
+      "company": "Copart",
+      "symbol": "CPRT",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Diversified Support Services"
+    },
+    {
+      "company": "Core & Main",
+      "symbol": "CNM",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Corning Inc.",
+      "symbol": "GLW",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Electronic Components"
+    },
+    {
+      "company": "Corpay",
+      "symbol": "CPAY",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Transaction & Payment Processing Services"
+    },
+    {
+      "company": "Corteva",
+      "symbol": "CTVA",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Fertilizers & Agricultural Chemicals"
+    },
+    {
+      "company": "CoStar Group",
+      "symbol": "CSGP",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Real Estate Services"
+    },
+    {
+      "company": "Costco",
+      "symbol": "COST",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Consumer Staples Merchandise Retail"
+    },
+    {
+      "company": "Coterra",
+      "symbol": "CTRA",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Oil & Gas Exploration & Production"
+    },
+    {
+      "company": "Coty",
+      "symbol": "COTY",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Personal Care Products"
+    },
+    {
+      "company": "Coupang",
+      "symbol": "CPNG",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Cousins Properties",
+      "symbol": "CUZ",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Office REITs"
+    },
+    {
+      "company": "Crane Co.",
+      "symbol": "CR",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Machinery & Supplies & Components"
+    },
+    {
+      "company": "Crane NXT",
+      "symbol": "CXT",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Machinery & Supplies & Components"
+    },
+    {
+      "company": "Credit Acceptance",
+      "symbol": "CACC",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "CRH plc",
+      "symbol": "CRH",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Construction Materials"
+    },
+    {
+      "company": "Crocs",
+      "symbol": "CROX",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Footwear"
+    },
+    {
+      "company": "CrowdStrike",
+      "symbol": "CRWD",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Application Software"
+    },
+    {
+      "company": "Crown Castle",
+      "symbol": "CCI",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Telecom Tower REITs"
+    },
+    {
+      "company": "Crown Holdings",
+      "symbol": "CCK",
+      "gics_sector": "Materials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "CSX Corporation",
+      "symbol": "CSX",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Rail Transportation"
+    },
+    {
+      "company": "CubeSmart",
+      "symbol": "CUBE",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Cummins",
+      "symbol": "CMI",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Machinery & Supplies & Components"
+    },
+    {
+      "company": "Curtiss-Wright",
+      "symbol": "CW",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Aerospace & Defense"
+    },
+    {
+      "company": "CVS Health",
+      "symbol": "CVS",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Services"
+    },
+    {
+      "company": "D. R. Horton",
+      "symbol": "DHI",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Homebuilding"
+    },
+    {
+      "company": "Danaher Corporation",
+      "symbol": "DHR",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Life Sciences Tools & Services"
+    },
+    {
+      "company": "Darden Restaurants",
+      "symbol": "DRI",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Restaurants"
+    },
+    {
+      "company": "Darling Ingredients",
+      "symbol": "DAR",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Datadog",
+      "symbol": "DDOG",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Application Software"
+    },
+    {
+      "company": "DaVita",
+      "symbol": "DVA",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Facilities"
+    },
+    {
+      "company": "Dayforce",
+      "symbol": "DAY",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Human Resource & Employment Services"
+    },
+    {
+      "company": "Deckers Brands",
+      "symbol": "DECK",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Footwear"
+    },
+    {
+      "company": "Deere & Company",
+      "symbol": "DE",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Agricultural & Farm Machinery"
+    },
+    {
+      "company": "Delta Air Lines",
+      "symbol": "DAL",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Passenger Airlines"
+    },
+    {
+      "company": "Dell Technologies",
+      "symbol": "DELL",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Technology Hardware, Storage & Peripherals"
+    },
+    {
+      "company": "Dentsply Sirona",
+      "symbol": "XRAY",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Supplies"
+    },
+    {
+      "company": "Devon Energy",
+      "symbol": "DVN",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Oil & Gas Exploration & Production"
+    },
+    {
+      "company": "Dexcom",
+      "symbol": "DXCM",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Equipment"
+    },
+    {
+      "company": "Diamondback Energy",
+      "symbol": "FANG",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Oil & Gas Exploration & Production"
+    },
+    {
+      "company": "Dick's Sporting Goods",
+      "symbol": "DKS",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Other Specialty Retail"
+    },
+    {
+      "company": "Digital Realty",
+      "symbol": "DLR",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Data Center REITs"
+    },
+    {
+      "company": "Dillard's",
+      "symbol": "DDS",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Broadline Retail"
+    },
+    {
+      "company": "DocuSign",
+      "symbol": "DOCU",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Application Software"
+    },
+    {
+      "company": "Dolby Laboratories",
+      "symbol": "DLB",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Dollar General",
+      "symbol": "DG",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Consumer Staples Merchandise Retail"
+    },
+    {
+      "company": "Dollar Tree",
+      "symbol": "DLTR",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Consumer Staples Merchandise Retail"
+    },
+    {
+      "company": "Dominion Energy",
+      "symbol": "D",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Electric Utilities"
+    },
+    {
+      "company": "Domino's",
+      "symbol": "DPZ",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Restaurants"
+    },
+    {
+      "company": "Donaldson Company",
+      "symbol": "DCI",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Machinery & Supplies & Components"
+    },
+    {
+      "company": "DoorDash",
+      "symbol": "DASH",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Interactive Media & Services"
+    },
+    {
+      "company": "DoubleVerify",
+      "symbol": "DV",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Dover Corporation",
+      "symbol": "DOV",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Machinery & Supplies & Components"
+    },
+    {
+      "company": "Dow Inc.",
+      "symbol": "DOW",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Commodity Chemicals"
+    },
+    {
+      "company": "Doximity",
+      "symbol": "DOCS",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "DraftKings",
+      "symbol": "DKNG",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Dropbox",
+      "symbol": "DBX",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "DT Midstream",
+      "symbol": "DTM",
+      "gics_sector": "Energy",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "DTE Energy",
+      "symbol": "DTE",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Multi-Utilities"
+    },
+    {
+      "company": "Duke Energy",
+      "symbol": "DUK",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Electric Utilities"
+    },
+    {
+      "company": "Dun & Bradstreet",
+      "symbol": "DNB",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Duolingo",
+      "symbol": "DUOL",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Education Services"
+    },
+    {
+      "company": "DuPont",
+      "symbol": "DD",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Specialty Chemicals"
+    },
+    {
+      "company": "Dutch Bros. Coffee",
+      "symbol": "BROS",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Restaurants"
+    },
+    {
+      "company": "DXC Technology",
+      "symbol": "DXC",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "IT Consulting & Other Services"
+    },
+    {
+      "company": "Dynatrace",
+      "symbol": "DT",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "e.l.f. Beauty",
+      "symbol": "ELF",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Personal Care Products"
+    },
+    {
+      "company": "Eagle Materials",
+      "symbol": "EXP",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Construction Materials"
+    },
+    {
+      "company": "East West Bancorp",
+      "symbol": "EWBC",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Regional Banks"
+    },
+    {
+      "company": "EastGroup Properties",
+      "symbol": "EGP",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Eastman Chemical Company",
+      "symbol": "EMN",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Diversified Chemicals"
+    },
+    {
+      "company": "Eaton Corporation",
+      "symbol": "ETN",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Electrical Components & Equipment"
+    },
+    {
+      "company": "eBay",
+      "symbol": "EBAY",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Broadline Retail"
+    },
+    {
+      "company": "Ecolab",
+      "symbol": "ECL",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Specialty Chemicals"
+    },
+    {
+      "company": "Edison International",
+      "symbol": "EIX",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Electric Utilities"
+    },
+    {
+      "company": "Edwards Lifesciences",
+      "symbol": "EW",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Equipment"
+    },
+    {
+      "company": "Elanco",
+      "symbol": "ELAN",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Elastic NV",
+      "symbol": "ESTC",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Electronic Arts",
+      "symbol": "EA",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Interactive Home Entertainment"
+    },
+    {
+      "company": "Element Solutions",
+      "symbol": "ESI",
+      "gics_sector": "Materials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Elevance Health",
+      "symbol": "ELV",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Managed Health Care"
+    },
+    {
+      "company": "Emcor",
+      "symbol": "EME",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Construction & Engineering"
+    },
+    {
+      "company": "Emerson Electric",
+      "symbol": "EMR",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Electrical Components & Equipment"
+    },
+    {
+      "company": "Encompass Health",
+      "symbol": "EHC",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Facilities"
+    },
+    {
+      "company": "Enovis",
+      "symbol": "ENOV",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Equipment"
+    },
+    {
+      "company": "Enphase Energy",
+      "symbol": "ENPH",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Electronic Components"
+    },
+    {
+      "company": "Entegris",
+      "symbol": "ENTG",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Entergy",
+      "symbol": "ETR",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Electric Utilities"
+    },
+    {
+      "company": "Envista",
+      "symbol": "NVST",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Supplies"
+    },
+    {
+      "company": "EOG Resources",
+      "symbol": "EOG",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Oil & Gas Exploration & Production"
+    },
+    {
+      "company": "EPAM Systems",
+      "symbol": "EPAM",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "IT Consulting & Other Services"
+    },
+    {
+      "company": "EPR Properties",
+      "symbol": "EPR",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Other Specialized REITs"
+    },
+    {
+      "company": "EQT Corporation",
+      "symbol": "EQT",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Oil & Gas Exploration & Production"
+    },
+    {
+      "company": "Equifax",
+      "symbol": "EFX",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Research & Consulting Services"
+    },
+    {
+      "company": "Equinix",
+      "symbol": "EQIX",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Data Center REITs"
+    },
+    {
+      "company": "Equitable Holdings",
+      "symbol": "EQH",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Equity Lifestyle Properties",
+      "symbol": "ELS",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Equity Residential",
+      "symbol": "EQR",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Residential REITs"
+    },
+    {
+      "company": "ESAB",
+      "symbol": "ESAB",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Machinery & Supplies & Components"
+    },
+    {
+      "company": "Essential Utilities",
+      "symbol": "WTRG",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Water Utilities"
+    },
+    {
+      "company": "Essex Property Trust",
+      "symbol": "ESS",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Residential REITs"
+    },
+    {
+      "company": "Estée Lauder Companies (The)",
+      "symbol": "EL",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Personal Care Products"
+    },
+    {
+      "company": "Etsy",
+      "symbol": "ETSY",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Euronet Worldwide",
+      "symbol": "EEFT",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Transaction & Payment Processing Services"
+    },
+    {
+      "company": "Evercore",
+      "symbol": "EVR",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Investment Banking & Brokerage"
+    },
+    {
+      "company": "Everest Group",
+      "symbol": "EG",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Reinsurance"
+    },
+    {
+      "company": "Evergy",
+      "symbol": "EVRG",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Electric Utilities"
+    },
+    {
+      "company": "Eversource Energy",
+      "symbol": "ES",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Multi-Utilities"
+    },
+    {
+      "company": "Everus Construction Group",
+      "symbol": "ECG",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Construction & Engineering"
+    },
+    {
+      "company": "Exact Sciences",
+      "symbol": "EXAS",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Exelixis",
+      "symbol": "EXEL",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Biotechnology"
+    },
+    {
+      "company": "Exelon",
+      "symbol": "EXC",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Multi-Utilities"
+    },
+    {
+      "company": "Expand Energy",
+      "symbol": "EXE",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Oil & Gas Exploration & Production"
+    },
+    {
+      "company": "Expedia Group",
+      "symbol": "EXPE",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Hotels, Resorts & Cruise Lines"
+    },
+    {
+      "company": "Expeditors International",
+      "symbol": "EXPD",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Air Freight & Logistics"
+    },
+    {
+      "company": "Extra Space Storage",
+      "symbol": "EXR",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Self-Storage REITs"
+    },
+    {
+      "company": "ExxonMobil",
+      "symbol": "XOM",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Integrated Oil & Gas"
+    },
+    {
+      "company": "F5, Inc.",
+      "symbol": "FFIV",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Communications Equipment"
+    },
+    {
+      "company": "FactSet",
+      "symbol": "FDS",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Financial Exchanges & Data"
+    },
+    {
+      "company": "Fair Isaac",
+      "symbol": "FICO",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Application Software"
+    },
+    {
+      "company": "Fastenal",
+      "symbol": "FAST",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Building Products"
+    },
+    {
+      "company": "Federal Realty Investment Trust",
+      "symbol": "FRT",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Retail REITs"
+    },
+    {
+      "company": "FedEx",
+      "symbol": "FDX",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Air Freight & Logistics"
+    },
+    {
+      "company": "Ferguson Enterprises",
+      "symbol": "FERG",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Machinery & Supplies & Components"
+    },
+    {
+      "company": "Fidelity National Financial",
+      "symbol": "FNF",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Fidelity National Information Services",
+      "symbol": "FIS",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Transaction & Payment Processing Services"
+    },
+    {
+      "company": "Fifth Third Bancorp",
+      "symbol": "FITB",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Regional Banks"
+    },
+    {
+      "company": "First American Financial Corporation",
+      "symbol": "FAF",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Property & Casualty Insurance"
+    },
+    {
+      "company": "First Citizens BancShares",
+      "symbol": "FCNCA",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "First Hawaiian, Inc.",
+      "symbol": "FHB",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Regional Banks"
+    },
+    {
+      "company": "First Horizon Corporation",
+      "symbol": "FHN",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Regional Banks"
+    },
+    {
+      "company": "First Industrial Realty Trust",
+      "symbol": "FR",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "First Solar",
+      "symbol": "FSLR",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Semiconductors"
+    },
+    {
+      "company": "FirstEnergy",
+      "symbol": "FE",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Electric Utilities"
+    },
+    {
+      "company": "Fiserv",
+      "symbol": "FI",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Transaction & Payment Processing Services"
+    },
+    {
+      "company": "Five Below",
+      "symbol": "FIVE",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Other Specialty Retail"
+    },
+    {
+      "company": "Five9",
+      "symbol": "FIVN",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Floor & Decor",
+      "symbol": "FND",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Home Improvement Retail"
+    },
+    {
+      "company": "Flowers Foods",
+      "symbol": "FLO",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Packaged Foods & Meats"
+    },
+    {
+      "company": "Flowserve",
+      "symbol": "FLS",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Machinery & Supplies & Components"
+    },
+    {
+      "company": "FMC Corporation",
+      "symbol": "FMC",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Fertilizers & Agricultural Chemicals"
+    },
+    {
+      "company": "FNB Corporation",
+      "symbol": "FNB",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Regional Banks"
+    },
+    {
+      "company": "Ford Motor Company",
+      "symbol": "F",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Automobile Manufacturers"
+    },
+    {
+      "company": "Fortinet",
+      "symbol": "FTNT",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Systems Software"
+    },
+    {
+      "company": "Fortive",
+      "symbol": "FTV",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Machinery & Supplies & Components"
+    },
+    {
+      "company": "Fortrea",
+      "symbol": "FTRE",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Fortune Brands Innovations",
+      "symbol": "FBIN",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Building Products"
+    },
+    {
+      "company": "Fox Corporation (Class A)",
+      "symbol": "FOXA",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Movies & Entertainment"
+    },
+    {
+      "company": "Fox Corporation (Class B)",
+      "symbol": "FOX",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Movies & Entertainment"
+    },
+    {
+      "company": "Franklin Templeton Investments",
+      "symbol": "BEN",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Asset Management & Custody Banks"
+    },
+    {
+      "company": "Freeport-McMoRan",
+      "symbol": "FCX",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Copper"
+    },
+    {
+      "company": "Freshpet",
+      "symbol": "FRPT",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Frontier Communications",
+      "symbol": "FYBR",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Frost Bank",
+      "symbol": "CFR",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Regional Banks"
+    },
+    {
+      "company": "FTI Consulting",
+      "symbol": "FCN",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Research & Consulting Services"
+    },
+    {
+      "company": "GameStop",
+      "symbol": "GME",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Computer & Electronics Retail"
+    },
+    {
+      "company": "Gaming and Leisure Properties",
+      "symbol": "GLPI",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Gap Inc.",
+      "symbol": "GAP",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Apparel Retail"
+    },
+    {
+      "company": "Garmin",
+      "symbol": "GRMN",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Consumer Electronics"
+    },
+    {
+      "company": "Gartner",
+      "symbol": "IT",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "IT Consulting & Other Services"
+    },
+    {
+      "company": "Gates Corporation",
+      "symbol": "GTES",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "GE Aerospace",
+      "symbol": "GE",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Aerospace & Defense"
+    },
+    {
+      "company": "GE HealthCare",
+      "symbol": "GEHC",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Equipment"
+    },
+    {
+      "company": "GE Vernova",
+      "symbol": "GEV",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Machinery & Supplies & Components"
+    },
+    {
+      "company": "Gen Digital",
+      "symbol": "GEN",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Application Software"
+    },
+    {
+      "company": "Generac",
+      "symbol": "GNRC",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Electrical Components & Equipment"
+    },
+    {
+      "company": "General Dynamics",
+      "symbol": "GD",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Aerospace & Defense"
+    },
+    {
+      "company": "General Mills",
+      "symbol": "GIS",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Packaged Foods & Meats"
+    },
+    {
+      "company": "General Motors",
+      "symbol": "GM",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Automobile Manufacturers"
+    },
+    {
+      "company": "Genpact",
+      "symbol": "G",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "IT Consulting & Other Services"
+    },
+    {
+      "company": "Gentex",
+      "symbol": "GNTX",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Automotive Parts & Equipment"
+    },
+    {
+      "company": "Genuine Parts Company",
+      "symbol": "GPC",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Automotive Parts & Equipment"
+    },
+    {
+      "company": "Gilead Sciences",
+      "symbol": "GILD",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Biotechnology"
+    },
+    {
+      "company": "GitLab",
+      "symbol": "GTLB",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Global Payments",
+      "symbol": "GPN",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Transaction & Payment Processing Services"
+    },
+    {
+      "company": "GlobalFoundries",
+      "symbol": "GFS",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Globant",
+      "symbol": "GLOB",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Globe Life",
+      "symbol": "GL",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Life & Health Insurance"
+    },
+    {
+      "company": "Globus Medical",
+      "symbol": "GMED",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Equipment"
+    },
+    {
+      "company": "GoDaddy",
+      "symbol": "GDDY",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Goldman Sachs",
+      "symbol": "GS",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Investment Banking & Brokerage"
+    },
+    {
+      "company": "Graco Inc.",
+      "symbol": "GGG",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Machinery & Supplies & Components"
+    },
+    {
+      "company": "Grail, Inc.",
+      "symbol": "GRAL",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Services"
+    },
+    {
+      "company": "Grand Canyon Education",
+      "symbol": "LOPE",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Education Services"
+    },
+    {
+      "company": "Graphic Packaging",
+      "symbol": "GPK",
+      "gics_sector": "Materials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Grocery Outlet",
+      "symbol": "GO",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Food Retail"
+    },
+    {
+      "company": "Guidewire Software",
+      "symbol": "GWRE",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "GXO Logistics",
+      "symbol": "GXO",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Air Freight & Logistics"
+    },
+    {
+      "company": "Halliburton",
+      "symbol": "HAL",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Oil & Gas Equipment & Services"
+    },
+    {
+      "company": "Hanover Insurance",
+      "symbol": "THG",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Property & Casualty Insurance"
+    },
+    {
+      "company": "Harley-Davidson",
+      "symbol": "HOG",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Motorcycle Manufacturers"
+    },
+    {
+      "company": "Hartford (The)",
+      "symbol": "HIG",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Property & Casualty Insurance"
+    },
+    {
+      "company": "Hasbro",
+      "symbol": "HAS",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Leisure Products"
+    },
+    {
+      "company": "Hayward Holdings",
+      "symbol": "HAYW",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "HCA Healthcare",
+      "symbol": "HCA",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Facilities"
+    },
+    {
+      "company": "Healthcare Realty Trust",
+      "symbol": "HR",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Healthpeak Properties",
+      "symbol": "DOC",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Health Care REITs"
+    },
+    {
+      "company": "HEICO (Class A)",
+      "symbol": "HEI.A",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Aerospace & Defense"
+    },
+    {
+      "company": "HEICO (Common)",
+      "symbol": "HEI",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Aerospace & Defense"
+    },
+    {
+      "company": "Jack Henry & Associates",
+      "symbol": "JKHY",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Transaction & Payment Processing Services"
+    },
+    {
+      "company": "Hershey Company (The)",
+      "symbol": "HSY",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Packaged Foods & Meats"
+    },
+    {
+      "company": "Hess Corporation",
+      "symbol": "HES",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Integrated Oil & Gas"
+    },
+    {
+      "company": "Hewlett Packard Enterprise",
+      "symbol": "HPE",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Technology Hardware, Storage & Peripherals"
+    },
+    {
+      "company": "Hexcel",
+      "symbol": "HXL",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Aerospace & Defense"
+    },
+    {
+      "company": "HF Sinclair",
+      "symbol": "DINO",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Oil & Gas Refining & Marketing"
+    },
+    {
+      "company": "Highwoods Properties",
+      "symbol": "HIW",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Hilton Worldwide",
+      "symbol": "HLT",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Hotels, Resorts & Cruise Lines"
+    },
+    {
+      "company": "Hologic",
+      "symbol": "HOLX",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Equipment"
+    },
+    {
+      "company": "Home Depot (The)",
+      "symbol": "HD",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Home Improvement Retail"
+    },
+    {
+      "company": "Honeywell",
+      "symbol": "HON",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Conglomerates"
+    },
+    {
+      "company": "Hormel Foods",
+      "symbol": "HRL",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Packaged Foods & Meats"
+    },
+    {
+      "company": "Host Hotels & Resorts",
+      "symbol": "HST",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Hotel & Resort REITs"
+    },
+    {
+      "company": "Houlihan Lokey",
+      "symbol": "HLI",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Howard Hughes Holdings",
+      "symbol": "HHH",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Howmet Aerospace",
+      "symbol": "HWM",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Aerospace & Defense"
+    },
+    {
+      "company": "HP Inc.",
+      "symbol": "HPQ",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Technology Hardware, Storage & Peripherals"
+    },
+    {
+      "company": "Hubbell Incorporated",
+      "symbol": "HUBB",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Machinery & Supplies & Components"
+    },
+    {
+      "company": "HubSpot",
+      "symbol": "HUBS",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Humana",
+      "symbol": "HUM",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Managed Health Care"
+    },
+    {
+      "company": "Huntington Bancshares",
+      "symbol": "HBAN",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Regional Banks"
+    },
+    {
+      "company": "Huntington Ingalls Industries",
+      "symbol": "HII",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Aerospace & Defense"
+    },
+    {
+      "company": "Huntsman Corporation",
+      "symbol": "HUN",
+      "gics_sector": "Materials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Hyatt Hotels",
+      "symbol": "H",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "IAC Inc.",
+      "symbol": "IAC",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "IBM",
+      "symbol": "IBM",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "IT Consulting & Other Services"
+    },
+    {
+      "company": "Idacorp",
+      "symbol": "IDA",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Electric Utilities"
+    },
+    {
+      "company": "IDEX Corporation",
+      "symbol": "IEX",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Machinery & Supplies & Components"
+    },
+    {
+      "company": "Idexx Laboratories",
+      "symbol": "IDXX",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Equipment"
+    },
+    {
+      "company": "Illinois Tool Works",
+      "symbol": "ITW",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Machinery & Supplies & Components"
+    },
+    {
+      "company": "Illumina, Inc.",
+      "symbol": "ILMN",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Life Sciences Tools & Services"
+    },
+    {
+      "company": "Incyte",
+      "symbol": "INCY",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Biotechnology"
+    },
+    {
+      "company": "Informatica",
+      "symbol": "INFA",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Ingersoll Rand",
+      "symbol": "IR",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Machinery & Supplies & Components"
+    },
+    {
+      "company": "Ingram Micro",
+      "symbol": "INGM",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Technology Distributors"
+    },
+    {
+      "company": "Ingredion",
+      "symbol": "INGR",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Agricultural Products & Services"
+    },
+    {
+      "company": "Inspire Medical Systems",
+      "symbol": "INSP",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Insulet",
+      "symbol": "PODD",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Intel",
+      "symbol": "INTC",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Semiconductors"
+    },
+    {
+      "company": "Interactive Brokers",
+      "symbol": "IBKR",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Investment Banking & Brokerage"
+    },
+    {
+      "company": "Intercontinental Exchange",
+      "symbol": "ICE",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Financial Exchanges & Data"
+    },
+    {
+      "company": "International Flavors & Fragrances",
+      "symbol": "IFF",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Specialty Chemicals"
+    },
+    {
+      "company": "International Paper",
+      "symbol": "IP",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Paper & Plastic Packaging Products & Materials"
+    },
+    {
+      "company": "Interpublic Group of Companies (The)",
+      "symbol": "IPG",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Advertising"
+    },
+    {
+      "company": "Intuit",
+      "symbol": "INTU",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Application Software"
+    },
+    {
+      "company": "Intuitive Surgical",
+      "symbol": "ISRG",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Equipment"
+    },
+    {
+      "company": "Invesco",
+      "symbol": "IVZ",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Asset Management & Custody Banks"
+    },
+    {
+      "company": "Invitation Homes",
+      "symbol": "INVH",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Ionis Pharmaceuticals",
+      "symbol": "IONS",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "IPG Photonics",
+      "symbol": "IPGP",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Electronic Manufacturing Services"
+    },
+    {
+      "company": "IQVIA",
+      "symbol": "IQV",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Life Sciences Tools & Services"
+    },
+    {
+      "company": "Iridium Communications",
+      "symbol": "IRDM",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Iron Mountain",
+      "symbol": "IRM",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Other Specialized REITs"
+    },
+    {
+      "company": "ITT Inc.",
+      "symbol": "ITT",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Machinery & Supplies & Components"
+    },
+    {
+      "company": "Jabil",
+      "symbol": "JBL",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Electronic Manufacturing Services"
+    },
+    {
+      "company": "Jacobs Solutions",
+      "symbol": "J",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Construction & Engineering"
+    },
+    {
+      "company": "Janus Henderson",
+      "symbol": "JHG",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Asset Management & Custody Banks"
+    },
+    {
+      "company": "Jazz Pharmaceuticals",
+      "symbol": "JAZZ",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Pharmaceuticals"
+    },
+    {
+      "company": "J. B. Hunt",
+      "symbol": "JBHT",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Cargo Ground Transportation"
+    },
+    {
+      "company": "Jefferies Financial Group",
+      "symbol": "JEF",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Multi-Sector Holdings"
+    },
+    {
+      "company": "Johnson & Johnson",
+      "symbol": "JNJ",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Pharmaceuticals"
+    },
+    {
+      "company": "Johnson Controls",
+      "symbol": "JCI",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Building Products"
+    },
+    {
+      "company": "Jones Lang LaSalle",
+      "symbol": "JLL",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Real Estate Services"
+    },
+    {
+      "company": "JPMorgan Chase",
+      "symbol": "JPM",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Diversified Banks"
+    },
+    {
+      "company": "Juniper Networks",
+      "symbol": "JNPR",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Communications Equipment"
+    },
+    {
+      "company": "KBR, Inc.",
+      "symbol": "KBR",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Diversified Support Services"
+    },
+    {
+      "company": "Kellanova",
+      "symbol": "K",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Packaged Foods & Meats"
+    },
+    {
+      "company": "Kemper Corporation",
+      "symbol": "KMPR",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Multi-line Insurance"
+    },
+    {
+      "company": "Kenvue",
+      "symbol": "KVUE",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Personal Care Products"
+    },
+    {
+      "company": "Keurig Dr Pepper",
+      "symbol": "KDP",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Soft Drinks & Non-alcoholic Beverages"
+    },
+    {
+      "company": "Keycorp",
+      "symbol": "KEY",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Regional Banks"
+    },
+    {
+      "company": "Keysight",
+      "symbol": "KEYS",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Electronic Equipment & Instruments"
+    },
+    {
+      "company": "Kilroy Realty",
+      "symbol": "KRC",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Kimberly-Clark",
+      "symbol": "KMB",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Household Products"
+    },
+    {
+      "company": "Kimco Realty",
+      "symbol": "KIM",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Retail REITs"
+    },
+    {
+      "company": "Kinder Morgan",
+      "symbol": "KMI",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Oil & Gas Storage & Transportation"
+    },
+    {
+      "company": "Kinsale Capital Group",
+      "symbol": "KNSL",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Kirby Corporation",
+      "symbol": "KEX",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Marine"
+    },
+    {
+      "company": "KKR & Co. Inc.",
+      "symbol": "KKR",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Asset Management & Custody Banks"
+    },
+    {
+      "company": "KLA Corporation",
+      "symbol": "KLAC",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Semiconductor Materials & Equipment"
+    },
+    {
+      "company": "Knight-Swift",
+      "symbol": "KNX",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Cargo Ground Transportation"
+    },
+    {
+      "company": "Kohl's",
+      "symbol": "KSS",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "General Merchandise Stores"
+    },
+    {
+      "company": "Kraft Heinz",
+      "symbol": "KHC",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Packaged Foods & Meats"
+    },
+    {
+      "company": "Kroger",
+      "symbol": "KR",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Food Retail"
+    },
+    {
+      "company": "Kyndryl",
+      "symbol": "KD",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "IT Consulting & Other Services"
+    },
+    {
+      "company": "L3Harris",
+      "symbol": "LHX",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Aerospace & Defense"
+    },
+    {
+      "company": "Labcorp",
+      "symbol": "LH",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Services"
+    },
+    {
+      "company": "Lam Research",
+      "symbol": "LRCX",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Semiconductor Materials & Equipment"
+    },
+    {
+      "company": "Lamar Advertising",
+      "symbol": "LAMR",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Other Specialized REITs"
+    },
+    {
+      "company": "Lamb Weston",
+      "symbol": "LW",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Packaged Foods & Meats"
+    },
+    {
+      "company": "Landstar",
+      "symbol": "LSTR",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Cargo Ground Transportation"
+    },
+    {
+      "company": "Las Vegas Sands",
+      "symbol": "LVS",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Casinos & Gaming"
+    },
+    {
+      "company": "Lattice Semiconductor",
+      "symbol": "LSCC",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Semiconductors"
+    },
+    {
+      "company": "Lazard",
+      "symbol": "LAZ",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Lear Corporation",
+      "symbol": "LEA",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Automotive Parts & Equipment"
+    },
+    {
+      "company": "Leggett & Platt",
+      "symbol": "LEG",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Home Furnishings"
+    },
+    {
+      "company": "Leidos",
+      "symbol": "LDOS",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Diversified Support Services"
+    },
+    {
+      "company": "Lennar (Class A)",
+      "symbol": "LEN",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Homebuilding"
+    },
+    {
+      "company": "Lennar (Class B)",
+      "symbol": "LEN.B",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Homebuilding"
+    },
+    {
+      "company": "Lennox International",
+      "symbol": "LII",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Building Products"
+    },
+    {
+      "company": "Liberty Broadband (Series A)",
+      "symbol": "LBRDA",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Liberty Broadband (Series C)",
+      "symbol": "LBRDK",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Liberty Global (Series A)",
+      "symbol": "LBTYA",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Cable & Satellite"
+    },
+    {
+      "company": "Liberty Global (Series C)",
+      "symbol": "LBTYK",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Cable & Satellite"
+    },
+    {
+      "company": "Liberty Formula 1 (Series A)",
+      "symbol": "FWONA",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Liberty Formula 1 (Series C)",
+      "symbol": "FWONK",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Liberty Live (Series A)",
+      "symbol": "LLYVA",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Liberty Live (Series C)",
+      "symbol": "LLYVK",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Light & Wonder",
+      "symbol": "LNW",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Casinos & Gaming"
+    },
+    {
+      "company": "Lilly (Eli)",
+      "symbol": "LLY",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Pharmaceuticals"
+    },
+    {
+      "company": "Lincoln Electric",
+      "symbol": "LECO",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Machinery & Supplies & Components"
+    },
+    {
+      "company": "Lincoln Financial",
+      "symbol": "LNC",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Multi-line Insurance"
+    },
+    {
+      "company": "Linde plc",
+      "symbol": "LIN",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Industrial Gases"
+    },
+    {
+      "company": "Lineage, Inc.",
+      "symbol": "LINE",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Industrial REITs"
+    },
+    {
+      "company": "Lithia Motors",
+      "symbol": "LAD",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Automotive Retail"
+    },
+    {
+      "company": "Littelfuse",
+      "symbol": "LFUS",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Electronic Components"
+    },
+    {
+      "company": "Live Nation Entertainment",
+      "symbol": "LYV",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Movies & Entertainment"
+    },
+    {
+      "company": "LKQ Corporation",
+      "symbol": "LKQ",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Distributors"
+    },
+    {
+      "company": "Loar Holdings",
+      "symbol": "LOAR",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Aerospace & Defense"
+    },
+    {
+      "company": "Lockheed Martin",
+      "symbol": "LMT",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Aerospace & Defense"
+    },
+    {
+      "company": "Loews Corporation",
+      "symbol": "L",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Multi-line Insurance"
+    },
+    {
+      "company": "Louisiana-Pacific",
+      "symbol": "LPX",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Forest Products"
+    },
+    {
+      "company": "Lowe's",
+      "symbol": "LOW",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Home Improvement Retail"
+    },
+    {
+      "company": "LPL Financial",
+      "symbol": "LPLA",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Lucid Motors",
+      "symbol": "LCID",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Automobile Manufacturers"
+    },
+    {
+      "company": "Lululemon Athletica",
+      "symbol": "LULU",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Apparel, Accessories & Luxury Goods"
+    },
+    {
+      "company": "Lumentum",
+      "symbol": "LITE",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Lyft",
+      "symbol": "LYFT",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Passenger Ground Transportation"
+    },
+    {
+      "company": "LyondellBasell",
+      "symbol": "LYB",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Specialty Chemicals"
+    },
+    {
+      "company": "M&T Bank",
+      "symbol": "MTB",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Regional Banks"
+    },
+    {
+      "company": "MACOM Technology Solutions",
+      "symbol": "MTSI",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Semiconductors"
+    },
+    {
+      "company": "Macy's, Inc.",
+      "symbol": "M",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Department Stores"
+    },
+    {
+      "company": "Madison Square Garden Sports",
+      "symbol": "MSGS",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Manhattan Associates",
+      "symbol": "MANH",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "ManpowerGroup",
+      "symbol": "MAN",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Human Resource & Employment Services"
+    },
+    {
+      "company": "Maplebear Inc.",
+      "symbol": "CART",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Food Retail"
+    },
+    {
+      "company": "Marathon Petroleum",
+      "symbol": "MPC",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Oil & Gas Refining & Marketing"
+    },
+    {
+      "company": "Markel",
+      "symbol": "MKL",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "MarketAxess",
+      "symbol": "MKTX",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Financial Exchanges & Data"
+    },
+    {
+      "company": "Marriott International",
+      "symbol": "MAR",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Hotels, Resorts & Cruise Lines"
+    },
+    {
+      "company": "Marriott Vacations Worldwide",
+      "symbol": "VAC",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Hotels, Resorts & Cruise Lines"
+    },
+    {
+      "company": "Marsh McLennan",
+      "symbol": "MMC",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Insurance Brokers"
+    },
+    {
+      "company": "Martin Marietta Materials",
+      "symbol": "MLM",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Construction Materials"
+    },
+    {
+      "company": "Marvell Technology",
+      "symbol": "MRVL",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Semiconductors"
+    },
+    {
+      "company": "Masco",
+      "symbol": "MAS",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Building Products"
+    },
+    {
+      "company": "Masimo",
+      "symbol": "MASI",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Equipment"
+    },
+    {
+      "company": "MasTec",
+      "symbol": "MTZ",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Construction & Engineering"
+    },
+    {
+      "company": "Mastercard",
+      "symbol": "MA",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Transaction & Payment Processing Services"
+    },
+    {
+      "company": "Matador Resources",
+      "symbol": "MTDR",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Oil & Gas Exploration & Production"
+    },
+    {
+      "company": "Match Group",
+      "symbol": "MTCH",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Interactive Media & Services"
+    },
+    {
+      "company": "Mattel",
+      "symbol": "MAT",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Leisure Products"
+    },
+    {
+      "company": "McCormick & Company",
+      "symbol": "MKC",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Packaged Foods & Meats"
+    },
+    {
+      "company": "McDonald's",
+      "symbol": "MCD",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Restaurants"
+    },
+    {
+      "company": "McKesson Corporation",
+      "symbol": "MCK",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Distributors"
+    },
+    {
+      "company": "MDU Resources",
+      "symbol": "MDU",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Multi-Utilities"
+    },
+    {
+      "company": "Medical Properties Trust",
+      "symbol": "MPW",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Health Care REITs"
+    },
+    {
+      "company": "Medpace",
+      "symbol": "MEDP",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Medtronic",
+      "symbol": "MDT",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Equipment"
+    },
+    {
+      "company": "Merck & Co.",
+      "symbol": "MRK",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Pharmaceuticals"
+    },
+    {
+      "company": "Meta Platforms",
+      "symbol": "META",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Interactive Media & Services"
+    },
+    {
+      "company": "Metlife",
+      "symbol": "MET",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Life & Health Insurance"
+    },
+    {
+      "company": "Mettler Toledo",
+      "symbol": "MTD",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Life Sciences Tools & Services"
+    },
+    {
+      "company": "MGIC Investment Corporation",
+      "symbol": "MTG",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Reinsurance"
+    },
+    {
+      "company": "MGM Resorts International",
+      "symbol": "MGM",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Casinos & Gaming"
+    },
+    {
+      "company": "Microchip Technology",
+      "symbol": "MCHP",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Semiconductors"
+    },
+    {
+      "company": "Micron Technology",
+      "symbol": "MU",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Semiconductors"
+    },
+    {
+      "company": "Microsoft",
+      "symbol": "MSFT",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Systems Software"
+    },
+    {
+      "company": "MicroStrategy",
+      "symbol": "MSTR",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Application Software"
+    },
+    {
+      "company": "Mid-America Apartment Communities",
+      "symbol": "MAA",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Residential REITs"
+    },
+    {
+      "company": "Middleby",
+      "symbol": "MIDD",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Machinery & Supplies & Components"
+    },
+    {
+      "company": "Millrose Properties",
+      "symbol": "MRP",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Homebuilding"
+    },
+    {
+      "company": "MKS Instruments",
+      "symbol": "MKSI",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Semiconductor Materials & Equipment"
+    },
+    {
+      "company": "Moderna",
+      "symbol": "MRNA",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Biotechnology"
+    },
+    {
+      "company": "Mohawk Industries",
+      "symbol": "MHK",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Home Furnishings"
+    },
+    {
+      "company": "Molina Healthcare",
+      "symbol": "MOH",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Managed Health Care"
+    },
+    {
+      "company": "Molson Coors",
+      "symbol": "TAP",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Brewers"
+    },
+    {
+      "company": "Mondelez International",
+      "symbol": "MDLZ",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Packaged Foods & Meats"
+    },
+    {
+      "company": "MongoDB Inc.",
+      "symbol": "MDB",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Systems Software"
+    },
+    {
+      "company": "Monolithic Power Systems",
+      "symbol": "MPWR",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Semiconductors"
+    },
+    {
+      "company": "Monster Beverage",
+      "symbol": "MNST",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Soft Drinks & Non-alcoholic Beverages"
+    },
+    {
+      "company": "Moody's Corporation",
+      "symbol": "MCO",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Financial Exchanges & Data"
+    },
+    {
+      "company": "Morgan Stanley",
+      "symbol": "MS",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Investment Banking & Brokerage"
+    },
+    {
+      "company": "Morningstar, Inc.",
+      "symbol": "MORN",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Mosaic Company (The)",
+      "symbol": "MOS",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Fertilizers & Agricultural Chemicals"
+    },
+    {
+      "company": "Motorola Solutions",
+      "symbol": "MSI",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Communications Equipment"
+    },
+    {
+      "company": "MP Materials",
+      "symbol": "MP",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Diversified Metals & Mining"
+    },
+    {
+      "company": "MSA Safety",
+      "symbol": "MSA",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Office Services & Supplies"
+    },
+    {
+      "company": "MSC Industrial Direct",
+      "symbol": "MSM",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Trading Companies & Distributors"
+    },
+    {
+      "company": "MSCI",
+      "symbol": "MSCI",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Financial Exchanges & Data"
+    },
+    {
+      "company": "Murphy USA",
+      "symbol": "MUSA",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Nasdaq, Inc.",
+      "symbol": "NDAQ",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Financial Exchanges & Data"
+    },
+    {
+      "company": "Natera",
+      "symbol": "NTRA",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "National Fuel Gas",
+      "symbol": "NFG",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Gas Utilities"
+    },
+    {
+      "company": "National Storage Affiliates",
+      "symbol": "NSA",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "nCino",
+      "symbol": "NCNO",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Netapp",
+      "symbol": "NTAP",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Technology Hardware, Storage & Peripherals"
+    },
+    {
+      "company": "Netflix",
+      "symbol": "NFLX",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Movies & Entertainment"
+    },
+    {
+      "company": "Neurocrine Biosciences",
+      "symbol": "NBIX",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Biotechnology"
+    },
+    {
+      "company": "New Fortress Energy",
+      "symbol": "NFE",
+      "gics_sector": "Energy",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "New York Times Company",
+      "symbol": "NYT",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Publishing"
+    },
+    {
+      "company": "Newell Brands",
+      "symbol": "NWL",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Housewares & Specialties"
+    },
+    {
+      "company": "NewMarket",
+      "symbol": "NEU",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Specialty Chemicals"
+    },
+    {
+      "company": "Newmont",
+      "symbol": "NEM",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Gold"
+    },
+    {
+      "company": "News Corp (Class A)",
+      "symbol": "NWSA",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Publishing"
+    },
+    {
+      "company": "News Corp (Class B)",
+      "symbol": "NWS",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Publishing"
+    },
+    {
+      "company": "Nexstar Media Group",
+      "symbol": "NXST",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "NextEra Energy",
+      "symbol": "NEE",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Multi-Utilities"
+    },
+    {
+      "company": "Nike, Inc.",
+      "symbol": "NKE",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Apparel, Accessories & Luxury Goods"
+    },
+    {
+      "company": "NiSource",
+      "symbol": "NI",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Multi-Utilities"
+    },
+    {
+      "company": "NNN Reit",
+      "symbol": "NNN",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Retail REITs"
+    },
+    {
+      "company": "Nordson",
+      "symbol": "NDSN",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Machinery & Supplies & Components"
+    },
+    {
+      "company": "Norfolk Southern",
+      "symbol": "NSC",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Rail Transportation"
+    },
+    {
+      "company": "Northern Trust",
+      "symbol": "NTRS",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Asset Management & Custody Banks"
+    },
+    {
+      "company": "Northrop Grumman",
+      "symbol": "NOC",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Aerospace & Defense"
+    },
+    {
+      "company": "Norwegian Cruise Line Holdings",
+      "symbol": "NCLH",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Hotels, Resorts & Cruise Lines"
+    },
+    {
+      "company": "NOV Inc.",
+      "symbol": "NOV",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Oil & Gas Equipment & Services"
+    },
+    {
+      "company": "NRG Energy",
+      "symbol": "NRG",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Independent Power Producers & Energy Traders"
+    },
+    {
+      "company": "Nubank",
+      "symbol": "NU",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Nucor",
+      "symbol": "NUE",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Steel"
+    },
+    {
+      "company": "Nutanix",
+      "symbol": "NTNX",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Nvent Electric",
+      "symbol": "NVT",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Nvidia",
+      "symbol": "NVDA",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Semiconductors"
+    },
+    {
+      "company": "NVR, Inc.",
+      "symbol": "NVR",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Homebuilding"
+    },
+    {
+      "company": "O'Reilly Auto Parts",
+      "symbol": "ORLY",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Automotive Retail"
+    },
+    {
+      "company": "Occidental Petroleum",
+      "symbol": "OXY",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Oil & Gas Exploration & Production"
+    },
+    {
+      "company": "OGE Energy",
+      "symbol": "OGE",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Multi-Utilities"
+    },
+    {
+      "company": "Okta, Inc.",
+      "symbol": "OKTA",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Application Software"
+    },
+    {
+      "company": "Old Dominion Freight Line",
+      "symbol": "ODFL",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Cargo Ground Transportation"
+    },
+    {
+      "company": "Old Republic International",
+      "symbol": "ORI",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Property & Casualty Insurance"
+    },
+    {
+      "company": "Olin Corporation",
+      "symbol": "OLN",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Diversified Chemicals"
+    },
+    {
+      "company": "Ollie's Bargain Outlet",
+      "symbol": "OLLI",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "General Merchandise Stores"
+    },
+    {
+      "company": "Omega Healthcare Investors",
+      "symbol": "OHI",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Omnicom Group",
+      "symbol": "OMC",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Advertising"
+    },
+    {
+      "company": "ON Semiconductor",
+      "symbol": "ON",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Semiconductors"
+    },
+    {
+      "company": "OneMain Financial",
+      "symbol": "OMF",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Oneok",
+      "symbol": "OKE",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Oil & Gas Storage & Transportation"
+    },
+    {
+      "company": "Onto Innovation",
+      "symbol": "ONTO",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Semiconductor Materials & Equipment"
+    },
+    {
+      "company": "Oracle Corporation",
+      "symbol": "ORCL",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Application Software"
+    },
+    {
+      "company": "Organon & Co.",
+      "symbol": "OGN",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Pharmaceuticals"
+    },
+    {
+      "company": "Oshkosh Corporation",
+      "symbol": "OSK",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Construction Machinery & Heavy Transportation Equipment"
+    },
+    {
+      "company": "Otis Worldwide",
+      "symbol": "OTIS",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Machinery & Supplies & Components"
+    },
+    {
+      "company": "Ovintiv",
+      "symbol": "OVV",
+      "gics_sector": "Energy",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Owens Corning",
+      "symbol": "OC",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Building Products"
+    },
+    {
+      "company": "Paccar",
+      "symbol": "PCAR",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Construction Machinery & Heavy Transportation Equipment"
+    },
+    {
+      "company": "Packaging Corporation of America",
+      "symbol": "PKG",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Paper & Plastic Packaging Products & Materials"
+    },
+    {
+      "company": "Palantir Technologies",
+      "symbol": "PLTR",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Internet Services & Infrastructure"
+    },
+    {
+      "company": "Palo Alto Networks",
+      "symbol": "PANW",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Systems Software"
+    },
+    {
+      "company": "Paramount Global (Class A)",
+      "symbol": "PARAA",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Movies & Entertainment"
+    },
+    {
+      "company": "Paramount Global (Class B)",
+      "symbol": "PARA",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Movies & Entertainment"
+    },
+    {
+      "company": "Park Hotels & Resorts",
+      "symbol": "PK",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Hotel & Resort REITs"
+    },
+    {
+      "company": "Parker Hannifin",
+      "symbol": "PH",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Machinery & Supplies & Components"
+    },
+    {
+      "company": "Parsons Corporation",
+      "symbol": "PSN",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Aerospace & Defense"
+    },
+    {
+      "company": "Paychex",
+      "symbol": "PAYX",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Human Resource & Employment Services"
+    },
+    {
+      "company": "Paycom",
+      "symbol": "PAYC",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Application Software"
+    },
+    {
+      "company": "Paylocity",
+      "symbol": "PCTY",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Application Software"
+    },
+    {
+      "company": "PayPal",
+      "symbol": "PYPL",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Transaction & Payment Processing Services"
+    },
+    {
+      "company": "Pegasystems",
+      "symbol": "PEGA",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Penn Entertainment",
+      "symbol": "PENN",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Casinos & Gaming"
+    },
+    {
+      "company": "Penske Automotive Group",
+      "symbol": "PAG",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Pentair",
+      "symbol": "PNR",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Machinery & Supplies & Components"
+    },
+    {
+      "company": "Penumbra, Inc.",
+      "symbol": "PEN",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Equipment"
+    },
+    {
+      "company": "PepsiCo",
+      "symbol": "PEP",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Soft Drinks & Non-alcoholic Beverages"
+    },
+    {
+      "company": "Performance Food Group",
+      "symbol": "PFGC",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Food Distributors"
+    },
+    {
+      "company": "Permian Resources",
+      "symbol": "PR",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Oil & Gas Exploration & Production"
+    },
+    {
+      "company": "Perrigo",
+      "symbol": "PRGO",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Pharmaceuticals"
+    },
+    {
+      "company": "Pfizer",
+      "symbol": "PFE",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Pharmaceuticals"
+    },
+    {
+      "company": "PG&E Corporation",
+      "symbol": "PCG",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Philip Morris International",
+      "symbol": "PM",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Tobacco"
+    },
+    {
+      "company": "Phillips 66",
+      "symbol": "PSX",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Oil & Gas Refining & Marketing"
+    },
+    {
+      "company": "Pilgrim's Pride",
+      "symbol": "PPC",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Packaged Foods & Meats"
+    },
+    {
+      "company": "Pinnacle Financial Partners",
+      "symbol": "PNFP",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Regional Banks"
+    },
+    {
+      "company": "Pinnacle West Capital",
+      "symbol": "PNW",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Multi-Utilities"
+    },
+    {
+      "company": "Pinterest",
+      "symbol": "PINS",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Planet Fitness",
+      "symbol": "PLNT",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Playtika",
+      "symbol": "PLTK",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "PNC Financial Services",
+      "symbol": "PNC",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Regional Banks"
+    },
+    {
+      "company": "Polaris Inc.",
+      "symbol": "PII",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Leisure Products"
+    },
+    {
+      "company": "Pool Corporation",
+      "symbol": "POOL",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Distributors"
+    },
+    {
+      "company": "Popular, Inc.",
+      "symbol": "BPOP",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Post Holdings",
+      "symbol": "POST",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Packaged Foods & Meats"
+    },
+    {
+      "company": "PPG Industries",
+      "symbol": "PPG",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Specialty Chemicals"
+    },
+    {
+      "company": "PPL Corporation",
+      "symbol": "PPL",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Electric Utilities"
+    },
+    {
+      "company": "Premier, Inc.",
+      "symbol": "PINC",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "T. Rowe Price",
+      "symbol": "TROW",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Asset Management & Custody Banks"
+    },
+    {
+      "company": "Primerica",
+      "symbol": "PRI",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Life & Health Insurance"
+    },
+    {
+      "company": "Principal Financial Group",
+      "symbol": "PFG",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Life & Health Insurance"
+    },
+    {
+      "company": "Procore",
+      "symbol": "PCOR",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Procter & Gamble",
+      "symbol": "PG",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Personal Care Products"
+    },
+    {
+      "company": "Progressive Corporation",
+      "symbol": "PGR",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Property & Casualty Insurance"
+    },
+    {
+      "company": "Prologis",
+      "symbol": "PLD",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Industrial REITs"
+    },
+    {
+      "company": "Prosperity Bancshares",
+      "symbol": "PB",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Regional Banks"
+    },
+    {
+      "company": "Prudential Financial",
+      "symbol": "PRU",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Life & Health Insurance"
+    },
+    {
+      "company": "PTC Inc.",
+      "symbol": "PTC",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Application Software"
+    },
+    {
+      "company": "Public Storage",
+      "symbol": "PSA",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Self-Storage REITs"
+    },
+    {
+      "company": "Public Service Enterprise Group",
+      "symbol": "PEG",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Electric Utilities"
+    },
+    {
+      "company": "PulteGroup",
+      "symbol": "PHM",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Homebuilding"
+    },
+    {
+      "company": "Pure Storage",
+      "symbol": "PSTG",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "PVH Corp.",
+      "symbol": "PVH",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Apparel, Accessories & Luxury Goods"
+    },
+    {
+      "company": "Qiagen",
+      "symbol": "QGEN",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Qorvo",
+      "symbol": "QRVO",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Semiconductors"
+    },
+    {
+      "company": "Qualcomm",
+      "symbol": "QCOM",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Semiconductors"
+    },
+    {
+      "company": "Quanta Services",
+      "symbol": "PWR",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Construction & Engineering"
+    },
+    {
+      "company": "QuantumScape",
+      "symbol": "QS",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Quest Diagnostics",
+      "symbol": "DGX",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Services"
+    },
+    {
+      "company": "QuidelOrtho",
+      "symbol": "QDEL",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Supplies"
+    },
+    {
+      "company": "Ralph Lauren Corporation",
+      "symbol": "RL",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Apparel, Accessories & Luxury Goods"
+    },
+    {
+      "company": "Range Resources",
+      "symbol": "RRC",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Oil & Gas Exploration & Production"
+    },
+    {
+      "company": "Raymond James Financial",
+      "symbol": "RJF",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Investment Banking & Brokerage"
+    },
+    {
+      "company": "Rayonier",
+      "symbol": "RYN",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Timber REITs"
+    },
+    {
+      "company": "RB Global",
+      "symbol": "RBA",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "RBC Bearings",
+      "symbol": "RBC",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Realty Income",
+      "symbol": "O",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Retail REITs"
+    },
+    {
+      "company": "Regal Rexnord",
+      "symbol": "RRX",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Electrical Components & Equipment"
+    },
+    {
+      "company": "Regency Centers",
+      "symbol": "REG",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Retail REITs"
+    },
+    {
+      "company": "Regeneron Pharmaceuticals",
+      "symbol": "REGN",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Biotechnology"
+    },
+    {
+      "company": "Regions Financial Corporation",
+      "symbol": "RF",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Regional Banks"
+    },
+    {
+      "company": "Reinsurance Group of America",
+      "symbol": "RGA",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Reinsurance"
+    },
+    {
+      "company": "Reliance, Inc.",
+      "symbol": "RS",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Steel"
+    },
+    {
+      "company": "RenaissanceRe",
+      "symbol": "RNR",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Reinsurance"
+    },
+    {
+      "company": "Repligen",
+      "symbol": "RGEN",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Biotechnology"
+    },
+    {
+      "company": "Republic Services",
+      "symbol": "RSG",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Environmental & Facilities Services"
+    },
+    {
+      "company": "Resmed",
+      "symbol": "RMD",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Equipment"
+    },
+    {
+      "company": "Revvity",
+      "symbol": "RVTY",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Equipment"
+    },
+    {
+      "company": "Rexford Industrial",
+      "symbol": "REXR",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Reynolds Consumer Products",
+      "symbol": "REYN",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "RH",
+      "symbol": "RH",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Homefurnishing Retail"
+    },
+    {
+      "company": "RingCentral",
+      "symbol": "RNG",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Rithm Capital",
+      "symbol": "RITM",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Rivian",
+      "symbol": "RIVN",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "RLI Corp.",
+      "symbol": "RLI",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Robert Half",
+      "symbol": "RHI",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Human Resource & Employment Services"
+    },
+    {
+      "company": "Robinhood Markets",
+      "symbol": "HOOD",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Roblox Corporation",
+      "symbol": "RBLX",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Rocket Companies",
+      "symbol": "RKT",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Rockwell Automation",
+      "symbol": "ROK",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Electrical Components & Equipment"
+    },
+    {
+      "company": "Roivant Sciences",
+      "symbol": "ROIV",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Roku, Inc.",
+      "symbol": "ROKU",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Rollins, Inc.",
+      "symbol": "ROL",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Environmental & Facilities Services"
+    },
+    {
+      "company": "Roper Technologies",
+      "symbol": "ROP",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Conglomerates"
+    },
+    {
+      "company": "Ross Stores",
+      "symbol": "ROST",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Apparel Retail"
+    },
+    {
+      "company": "Royal Caribbean Group",
+      "symbol": "RCL",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Hotels, Resorts & Cruise Lines"
+    },
+    {
+      "company": "Royal Gold",
+      "symbol": "RGLD",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Precious Metals & Minerals"
+    },
+    {
+      "company": "Royalty Pharma",
+      "symbol": "RPRX",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "RPM International",
+      "symbol": "RPM",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Specialty Chemicals"
+    },
+    {
+      "company": "RTX Corporation",
+      "symbol": "RTX",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Aerospace & Defense"
+    },
+    {
+      "company": "Ryan Specialty",
+      "symbol": "RYAN",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Ryder",
+      "symbol": "R",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Cargo Ground Transportation"
+    },
+    {
+      "company": "S&P Global",
+      "symbol": "SPGI",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Financial Exchanges & Data"
+    },
+    {
+      "company": "Saia",
+      "symbol": "SAIA",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "SAIC",
+      "symbol": "SAIC",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Diversified Support Services"
+    },
+    {
+      "company": "Salesforce",
+      "symbol": "CRM",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Application Software"
+    },
+    {
+      "company": "Sallie Mae",
+      "symbol": "SLM",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Consumer Finance"
+    },
+    {
+      "company": "SanDisk",
+      "symbol": "SNDK",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Technology Hardware, Storage & Peripherals"
+    },
+    {
+      "company": "Sarepta Therapeutics",
+      "symbol": "SRPT",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "SBA Communications",
+      "symbol": "SBAC",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Telecom Tower REITs"
+    },
+    {
+      "company": "Schein (Henry)",
+      "symbol": "HSIC",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Distributors"
+    },
+    {
+      "company": "Schlumberger",
+      "symbol": "SLB",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Oil & Gas Equipment & Services"
+    },
+    {
+      "company": "Schneider National",
+      "symbol": "SNDR",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Scotts Miracle-Gro Company",
+      "symbol": "SMG",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Fertilizers & Agricultural Chemicals"
+    },
+    {
+      "company": "Seaboard Corporation",
+      "symbol": "SEB",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Sealed Air",
+      "symbol": "SEE",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Paper & Plastic Packaging Products & Materials"
+    },
+    {
+      "company": "Seaport Entertainment Group",
+      "symbol": "SEG",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "SEI Investments Company",
+      "symbol": "SEIC",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Asset Management & Custody Banks"
+    },
+    {
+      "company": "Sempra",
+      "symbol": "SRE",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Multi-Utilities"
+    },
+    {
+      "company": "Sensata Technologies",
+      "symbol": "ST",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "SentinelOne",
+      "symbol": "S",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Service Corporation International",
+      "symbol": "SCI",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Specialized Consumer Services"
+    },
+    {
+      "company": "ServiceNow",
+      "symbol": "NOW",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Systems Software"
+    },
+    {
+      "company": "SharkNinja",
+      "symbol": "SN",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Household Appliances"
+    },
+    {
+      "company": "Sherwin-Williams",
+      "symbol": "SHW",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Specialty Chemicals"
+    },
+    {
+      "company": "Shift4",
+      "symbol": "FOUR",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Silgan Holdings",
+      "symbol": "SLGN",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Metal, Glass & Plastic Containers"
+    },
+    {
+      "company": "Simon Property Group",
+      "symbol": "SPG",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Retail REITs"
+    },
+    {
+      "company": "Simpson Manufacturing Company",
+      "symbol": "SSD",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Building Products"
+    },
+    {
+      "company": "Sirius XM",
+      "symbol": "SIRI",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Broadcasting"
+    },
+    {
+      "company": "SiteOne Landscape Supply",
+      "symbol": "SITE",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Skechers",
+      "symbol": "SKX",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Footwear"
+    },
+    {
+      "company": "Skyworks Solutions",
+      "symbol": "SWKS",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Semiconductors"
+    },
+    {
+      "company": "Smithfield Foods",
+      "symbol": "SFD",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Packaged Foods & Meats"
+    },
+    {
+      "company": "J.M. Smucker Company (The)",
+      "symbol": "SJM",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Packaged Foods & Meats"
+    },
+    {
+      "company": "Smurfit Westrock",
+      "symbol": "SW",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Paper & Plastic Packaging Products & Materials"
+    },
+    {
+      "company": "Snap-on",
+      "symbol": "SNA",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Machinery & Supplies & Components"
+    },
+    {
+      "company": "Snowflake Inc.",
+      "symbol": "SNOW",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "SoFi",
+      "symbol": "SOFI",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Solventum",
+      "symbol": "SOLV",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Equipment"
+    },
+    {
+      "company": "Somnigroup International",
+      "symbol": "SGI",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Home Furnishings"
+    },
+    {
+      "company": "Sonoco",
+      "symbol": "SON",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Paper & Plastic Packaging Products & Materials"
+    },
+    {
+      "company": "Sotera Health",
+      "symbol": "SHC",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Southern Company",
+      "symbol": "SO",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Electric Utilities"
+    },
+    {
+      "company": "Southern Copper",
+      "symbol": "SCCO",
+      "gics_sector": "Materials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Southwest Airlines",
+      "symbol": "LUV",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Passenger Airlines"
+    },
+    {
+      "company": "Spectrum Brands",
+      "symbol": "SPB",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Spirit AeroSystems",
+      "symbol": "SPR",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Spotify",
+      "symbol": "SPOT",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Movies & Entertainment"
+    },
+    {
+      "company": "SS&C Technologies",
+      "symbol": "SSNC",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "STAG Industrial",
+      "symbol": "STAG",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "StandardAero",
+      "symbol": "SARO",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Aerospace & Defense"
+    },
+    {
+      "company": "Stanley Black & Decker",
+      "symbol": "SWK",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Machinery & Supplies & Components"
+    },
+    {
+      "company": "Starbucks",
+      "symbol": "SBUX",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Restaurants"
+    },
+    {
+      "company": "Starwood Property Trust",
+      "symbol": "STWD",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "State Street Corporation",
+      "symbol": "STT",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Asset Management & Custody Banks"
+    },
+    {
+      "company": "Steel Dynamics",
+      "symbol": "STLD",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Steel"
+    },
+    {
+      "company": "Steris",
+      "symbol": "STE",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Equipment"
+    },
+    {
+      "company": "Stifel",
+      "symbol": "SF",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Investment Banking & Brokerage"
+    },
+    {
+      "company": "Stryker Corporation",
+      "symbol": "SYK",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Equipment"
+    },
+    {
+      "company": "Sun Communities",
+      "symbol": "SUI",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Supermicro",
+      "symbol": "SMCI",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Technology Hardware, Storage & Peripherals"
+    },
+    {
+      "company": "Synchrony Financial",
+      "symbol": "SYF",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Consumer Finance"
+    },
+    {
+      "company": "Synopsys",
+      "symbol": "SNPS",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Application Software"
+    },
+    {
+      "company": "Synovus",
+      "symbol": "SNV",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Regional Banks"
+    },
+    {
+      "company": "Sysco",
+      "symbol": "SYY",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Food Distributors"
+    },
+    {
+      "company": "T-Mobile US",
+      "symbol": "TMUS",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Wireless Telecommunication Services"
+    },
+    {
+      "company": "Take-Two Interactive",
+      "symbol": "TTWO",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Interactive Home Entertainment"
+    },
+    {
+      "company": "Tapestry, Inc.",
+      "symbol": "TPR",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Apparel, Accessories & Luxury Goods"
+    },
+    {
+      "company": "Targa Resources",
+      "symbol": "TRGP",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Oil & Gas Storage & Transportation"
+    },
+    {
+      "company": "Target Corporation",
+      "symbol": "TGT",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Consumer Staples Merchandise Retail"
+    },
+    {
+      "company": "TD Synnex",
+      "symbol": "SNX",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Technology Distributors"
+    },
+    {
+      "company": "TechnipFMC",
+      "symbol": "FTI",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Oil & Gas Equipment & Services"
+    },
+    {
+      "company": "Teledyne Technologies",
+      "symbol": "TDY",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Aerospace & Defense"
+    },
+    {
+      "company": "Teleflex",
+      "symbol": "TFX",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Equipment"
+    },
+    {
+      "company": "Tenet Healthcare",
+      "symbol": "THC",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Facilities"
+    },
+    {
+      "company": "Teradata",
+      "symbol": "TDC",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "IT Consulting & Other Services"
+    },
+    {
+      "company": "Teradyne",
+      "symbol": "TER",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Semiconductor Materials & Equipment"
+    },
+    {
+      "company": "Tesla, Inc.",
+      "symbol": "TSLA",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Automobile Manufacturers"
+    },
+    {
+      "company": "Tetra Tech",
+      "symbol": "TTEK",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Environmental & Facilities Services"
+    },
+    {
+      "company": "Texas Instruments",
+      "symbol": "TXN",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Semiconductors"
+    },
+    {
+      "company": "Texas Pacific Land Corporation",
+      "symbol": "TPL",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Oil & Gas Exploration & Production"
+    },
+    {
+      "company": "Texas Roadhouse",
+      "symbol": "TXRH",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Textron",
+      "symbol": "TXT",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Aerospace & Defense"
+    },
+    {
+      "company": "Thermo Fisher Scientific",
+      "symbol": "TMO",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Life Sciences Tools & Services"
+    },
+    {
+      "company": "Third Federal S&L",
+      "symbol": "TFSL",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Thor Industries",
+      "symbol": "THO",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Leisure Products"
+    },
+    {
+      "company": "Timken Company",
+      "symbol": "TKR",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Machinery & Supplies & Components"
+    },
+    {
+      "company": "TJX Companies",
+      "symbol": "TJX",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Apparel Retail"
+    },
+    {
+      "company": "TKO Group Holdings",
+      "symbol": "TKO",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Movies & Entertainment"
+    },
+    {
+      "company": "Toast, Inc.",
+      "symbol": "TOST",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Transaction & Payment Processing Services"
+    },
+    {
+      "company": "Toll Brothers",
+      "symbol": "TOL",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Homebuilding"
+    },
+    {
+      "company": "TopBuild",
+      "symbol": "BLD",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Toro Company (The)",
+      "symbol": "TTC",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Agricultural & Farm Machinery"
+    },
+    {
+      "company": "TPG Inc.",
+      "symbol": "TPG",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Tractor Supply Company",
+      "symbol": "TSCO",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Other Specialty Retail"
+    },
+    {
+      "company": "Trade Desk (The)",
+      "symbol": "TTD",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Advertising"
+    },
+    {
+      "company": "Tradeweb",
+      "symbol": "TW",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Trane Technologies",
+      "symbol": "TT",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Building Products"
+    },
+    {
+      "company": "TransDigm Group",
+      "symbol": "TDG",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Aerospace & Defense"
+    },
+    {
+      "company": "TransUnion",
+      "symbol": "TRU",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Travel + Leisure Co.",
+      "symbol": "TNL",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Hotels, Resorts & Cruise Lines"
+    },
+    {
+      "company": "Travelers Companies (The)",
+      "symbol": "TRV",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Property & Casualty Insurance"
+    },
+    {
+      "company": "Trex Company, Inc.",
+      "symbol": "TREX",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Building Products"
+    },
+    {
+      "company": "Trimble Inc.",
+      "symbol": "TRMB",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Electronic Equipment & Instruments"
+    },
+    {
+      "company": "Tripadvisor",
+      "symbol": "TRIP",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Interactive Media & Services"
+    },
+    {
+      "company": "Truist Financial",
+      "symbol": "TFC",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Regional Banks"
+    },
+    {
+      "company": "Trump Media & Technology Group",
+      "symbol": "DJT",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Interactive Media & Services"
+    },
+    {
+      "company": "Twilio",
+      "symbol": "TWLO",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Tyler Technologies",
+      "symbol": "TYL",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Application Software"
+    },
+    {
+      "company": "Tyson Foods",
+      "symbol": "TSN",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Packaged Foods & Meats"
+    },
+    {
+      "company": "U-Haul",
+      "symbol": "UHAL",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "U-Haul (Series N)",
+      "symbol": "UHAL.B",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "U.S. Bancorp",
+      "symbol": "USB",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Diversified Banks"
+    },
+    {
+      "company": "Uber",
+      "symbol": "UBER",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Passenger Ground Transportation"
+    },
+    {
+      "company": "Ubiquiti",
+      "symbol": "UI",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "UDR, Inc.",
+      "symbol": "UDR",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Residential REITs"
+    },
+    {
+      "company": "UGI Corporation",
+      "symbol": "UGI",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Gas Utilities"
+    },
+    {
+      "company": "UiPath",
+      "symbol": "PATH",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Ulta Beauty",
+      "symbol": "ULTA",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Other Specialty Retail"
+    },
+    {
+      "company": "Ultragenyx",
+      "symbol": "RARE",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Under Armour (Class A)",
+      "symbol": "UAA",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Apparel, Accessories & Luxury Goods"
+    },
+    {
+      "company": "Under Armour (Class C)",
+      "symbol": "UA",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Apparel, Accessories & Luxury Goods"
+    },
+    {
+      "company": "Union Pacific Corporation",
+      "symbol": "UNP",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Rail Transportation"
+    },
+    {
+      "company": "United Airlines Holdings",
+      "symbol": "UAL",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Passenger Airlines"
+    },
+    {
+      "company": "United Parcel Service",
+      "symbol": "UPS",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Air Freight & Logistics"
+    },
+    {
+      "company": "United Rentals",
+      "symbol": "URI",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Trading Companies & Distributors"
+    },
+    {
+      "company": "United Therapeutics",
+      "symbol": "UTHR",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Biotechnology"
+    },
+    {
+      "company": "United Wholesale Mortgage",
+      "symbol": "UWMC",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "UnitedHealth Group",
+      "symbol": "UNH",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Managed Health Care"
+    },
+    {
+      "company": "Unity Technologies",
+      "symbol": "U",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Universal Display Corporation",
+      "symbol": "OLED",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Semiconductors"
+    },
+    {
+      "company": "Universal Health Services",
+      "symbol": "UHS",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Facilities"
+    },
+    {
+      "company": "Unum",
+      "symbol": "UNM",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Life & Health Insurance"
+    },
+    {
+      "company": "US Foods",
+      "symbol": "USFD",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Vail Resorts",
+      "symbol": "MTN",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Valero Energy",
+      "symbol": "VLO",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Oil & Gas Refining & Marketing"
+    },
+    {
+      "company": "Valmont Industries",
+      "symbol": "VMI",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Machinery & Supplies & Components"
+    },
+    {
+      "company": "Valvoline",
+      "symbol": "VVV",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Commodity Chemicals"
+    },
+    {
+      "company": "Veeva Systems",
+      "symbol": "VEEV",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Ventas, Inc.",
+      "symbol": "VTR",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Health Care REITs"
+    },
+    {
+      "company": "Veralto",
+      "symbol": "VLTO",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Verisign",
+      "symbol": "VRSN",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Internet Services & Infrastructure"
+    },
+    {
+      "company": "Verisk Analytics",
+      "symbol": "VRSK",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Research & Consulting Services"
+    },
+    {
+      "company": "Verizon",
+      "symbol": "VZ",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Integrated Telecommunication Services"
+    },
+    {
+      "company": "Vertex Pharmaceuticals",
+      "symbol": "VRTX",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Biotechnology"
+    },
+    {
+      "company": "Vertiv",
+      "symbol": "VRT",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Vestis",
+      "symbol": "VSTS",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "VF Corporation",
+      "symbol": "VFC",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Apparel, Accessories & Luxury Goods"
+    },
+    {
+      "company": "Viatris",
+      "symbol": "VTRS",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Pharmaceuticals"
+    },
+    {
+      "company": "Vici Properties",
+      "symbol": "VICI",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Hotel & Resort REITs"
+    },
+    {
+      "company": "Viking Therapeutics",
+      "symbol": "VKTX",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Biotechnology"
+    },
+    {
+      "company": "Viper Energy",
+      "symbol": "VNOM",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Oil & Gas Storage & Transportation"
+    },
+    {
+      "company": "Virtu Financial",
+      "symbol": "VIRT",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Visa Inc.",
+      "symbol": "V",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Transaction & Payment Processing Services"
+    },
+    {
+      "company": "Vistra Corp.",
+      "symbol": "VST",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Vontier",
+      "symbol": "VNT",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Electronic Equipment & Instruments"
+    },
+    {
+      "company": "Vornado Realty Trust",
+      "symbol": "VNO",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Office REITs"
+    },
+    {
+      "company": "Voya Financial",
+      "symbol": "VOYA",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Multi-Sector Holdings"
+    },
+    {
+      "company": "Vulcan Materials",
+      "symbol": "VMC",
+      "gics_sector": "Materials",
+      "gics_sub_industry": "Construction Materials"
+    },
+    {
+      "company": "W. P. Carey",
+      "symbol": "WPC",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "W. R. Berkley Corporation",
+      "symbol": "WRB",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Property & Casualty Insurance"
+    },
+    {
+      "company": "W. W. Grainger",
+      "symbol": "GWW",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Machinery & Supplies & Components"
+    },
+    {
+      "company": "Wabtec",
+      "symbol": "WAB",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Construction Machinery & Heavy Transportation Equipment"
+    },
+    {
+      "company": "Walgreens Boots Alliance",
+      "symbol": "WBA",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Drug Retail"
+    },
+    {
+      "company": "Walmart",
+      "symbol": "WMT",
+      "gics_sector": "Consumer Staples",
+      "gics_sub_industry": "Consumer Staples Merchandise Retail"
+    },
+    {
+      "company": "Walt Disney Company (The)",
+      "symbol": "DIS",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Movies & Entertainment"
+    },
+    {
+      "company": "Warner Bros. Discovery",
+      "symbol": "WBD",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": "Broadcasting"
+    },
+    {
+      "company": "Waste Management, Inc.",
+      "symbol": "WM",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Environmental & Facilities Services"
+    },
+    {
+      "company": "Waters Corporation",
+      "symbol": "WAT",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Distributors"
+    },
+    {
+      "company": "Watsco",
+      "symbol": "WSO",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Trading Companies & Distributors"
+    },
+    {
+      "company": "Wayfair",
+      "symbol": "W",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Weatherford International",
+      "symbol": "WFRD",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Oil & Gas Equipment & Services"
+    },
+    {
+      "company": "Webster Bank",
+      "symbol": "WBS",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Regional Banks"
+    },
+    {
+      "company": "WEC Energy Group",
+      "symbol": "WEC",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Electric Utilities"
+    },
+    {
+      "company": "Wells Fargo",
+      "symbol": "WFC",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Diversified Banks"
+    },
+    {
+      "company": "Welltower",
+      "symbol": "WELL",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Health Care REITs"
+    },
+    {
+      "company": "Wendy's Company (The)",
+      "symbol": "WEN",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Restaurants"
+    },
+    {
+      "company": "Wesco International",
+      "symbol": "WCC",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "West Pharmaceutical Services",
+      "symbol": "WST",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Supplies"
+    },
+    {
+      "company": "Western Alliance Bancorporation",
+      "symbol": "WAL",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Western Digital",
+      "symbol": "WDC",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Technology Hardware, Storage & Peripherals"
+    },
+    {
+      "company": "Western Union",
+      "symbol": "WU",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Data Processing & Outsourced Services"
+    },
+    {
+      "company": "Westlake Corporation",
+      "symbol": "WLK",
+      "gics_sector": "Materials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "WEX Inc.",
+      "symbol": "WEX",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Transaction & Payment Processing Services"
+    },
+    {
+      "company": "Weyerhaeuser",
+      "symbol": "WY",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": "Timber REITs"
+    },
+    {
+      "company": "Whirlpool Corporation",
+      "symbol": "WHR",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Household Appliances"
+    },
+    {
+      "company": "White Mountains Insurance Group",
+      "symbol": "WTM",
+      "gics_sector": "Financials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Williams Companies",
+      "symbol": "WMB",
+      "gics_sector": "Energy",
+      "gics_sub_industry": "Oil & Gas Storage & Transportation"
+    },
+    {
+      "company": "Williams-Sonoma, Inc.",
+      "symbol": "WSM",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Homefurnishing Retail"
+    },
+    {
+      "company": "Willis Towers Watson",
+      "symbol": "WTW",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Insurance Brokers"
+    },
+    {
+      "company": "WillScot Mobile Mini",
+      "symbol": "WSC",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Wingstop",
+      "symbol": "WING",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Wintrust Financial",
+      "symbol": "WTFC",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Regional Banks"
+    },
+    {
+      "company": "Wolfspeed",
+      "symbol": "WOLF",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Semiconductors"
+    },
+    {
+      "company": "Woodward, Inc.",
+      "symbol": "WWD",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Electrical Components & Equipment"
+    },
+    {
+      "company": "Workday, Inc.",
+      "symbol": "WDAY",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Application Software"
+    },
+    {
+      "company": "Wyndham Hotels & Resorts",
+      "symbol": "WH",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Hotels, Resorts & Cruise Lines"
+    },
+    {
+      "company": "Wynn Resorts",
+      "symbol": "WYNN",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Casinos & Gaming"
+    },
+    {
+      "company": "Xcel Energy",
+      "symbol": "XEL",
+      "gics_sector": "Utilities",
+      "gics_sub_industry": "Multi-Utilities"
+    },
+    {
+      "company": "XP Inc.",
+      "symbol": "XP",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Investment Banking & Brokerage"
+    },
+    {
+      "company": "XPO, Inc.",
+      "symbol": "XPO",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Cargo Ground Transportation"
+    },
+    {
+      "company": "Xylem Inc.",
+      "symbol": "XYL",
+      "gics_sector": "Industrials",
+      "gics_sub_industry": "Industrial Machinery & Supplies & Components"
+    },
+    {
+      "company": "Yeti Holdings",
+      "symbol": "YETI",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Leisure Products"
+    },
+    {
+      "company": "Yum! Brands",
+      "symbol": "YUM",
+      "gics_sector": "Consumer Discretionary",
+      "gics_sub_industry": "Restaurants"
+    },
+    {
+      "company": "Zebra Technologies",
+      "symbol": "ZBRA",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Electronic Equipment & Instruments"
+    },
+    {
+      "company": "Zillow (Class A)",
+      "symbol": "ZG",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Zillow (Class C)",
+      "symbol": "Z",
+      "gics_sector": "Real Estate",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Zimmer Biomet",
+      "symbol": "ZBH",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Health Care Equipment"
+    },
+    {
+      "company": "Zions Bancorporation",
+      "symbol": "ZION",
+      "gics_sector": "Financials",
+      "gics_sub_industry": "Regional Banks"
+    },
+    {
+      "company": "Zoetis",
+      "symbol": "ZTS",
+      "gics_sector": "Health Care",
+      "gics_sub_industry": "Pharmaceuticals"
+    },
+    {
+      "company": "Zoom Communications",
+      "symbol": "ZM",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Application Software"
+    },
+    {
+      "company": "ZoomInfo",
+      "symbol": "GTM",
+      "gics_sector": "Communication Services",
+      "gics_sub_industry": ""
+    },
+    {
+      "company": "Zscaler",
+      "symbol": "ZS",
+      "gics_sector": "Information Technology",
+      "gics_sub_industry": "Application Software"
+    }
+  ]
+}

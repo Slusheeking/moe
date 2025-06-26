@@ -1,0 +1,984 @@
+Fetching OpenAPI specification from Unusual Whales...
+✅ Successfully fetched OpenAPI specification (495958 bytes)
+Found 105 API paths in OpenAPI specification
+
+COMPLETE UNUSUAL WHALES API ENDPOINTS FROM OPENAPI
+============================================================
+
+ALERTS (2 endpoints)
+----------------------------------------
+ 1. PublicApi.AlertsController.alerts
+    Path: GET /api/alerts
+    Summary: Alerts
+    Description: Returnst all the alerts that have been triggered for the user.
+
+
+
+The alerts are the same alerts as ...
+
+ 2. PublicApi.AlertsController.configs
+    Path: GET /api/alerts/configuration
+    Summary: Alert configurations
+    Description: Returnst all alert configurations of the user.
+
+Users can create alerts for:
+- Market tide
+- Gamma e...
+
+
+CONGRESS (3 endpoints)
+----------------------------------------
+ 1. PublicApi.CongressController.congress_trader
+    Path: GET /api/congress/congress-trader
+    Summary: Recent Reports By Trader
+    Description: Returns the recent reports by the given congress member.
+
+
+ 2. PublicApi.CongressController.congress_late_reports
+    Path: GET /api/congress/late-reports
+    Summary: Recent Late Reports
+    Description: Returns the recent late reports by congress members.
+If a date is given, will only return recent lat...
+
+ 3. PublicApi.CongressController.congress_recent_trades
+    Path: GET /api/congress/recent-trades
+    Summary: Recent Congress Trades
+    Description: Returns the latest transacted trades by congress members.
+If a date is given, will only return repor...
+
+
+DARKPOOL (2 endpoints)
+----------------------------------------
+ 1. PublicApi.DarkpoolController.darkpool_recent
+    Path: GET /api/darkpool/recent
+    Summary: Recent Darkpool Trades
+    Description: Returns the latest darkpool trades.
+
+
+ 2. PublicApi.DarkpoolController.darkpool_ticker
+    Path: GET /api/darkpool/{ticker}
+    Summary: Ticker Darkpool Trades
+    Description: Returns the darkpool trades for the given ticker on a given day.
+Date must be the current or a past ...
+
+
+EARNINGS (3 endpoints)
+----------------------------------------
+ 1. PublicApi.EarningsController.afterhours
+    Path: GET /api/earnings/afterhours
+    Summary: Afterhours
+    Description: Returns the afterhours earnings for a given date.
+
+
+ 2. PublicApi.EarningsController.premarket
+    Path: GET /api/earnings/premarket
+    Summary: Premarket
+    Description: Returns the premarket earnings for a given date.
+
+
+ 3. PublicApi.EarningsController.ticker
+    Path: GET /api/earnings/{ticker}
+    Summary: Historical Ticker Earnings
+    Description: Returns the historical earnings for the given ticker.
+
+
+
+ETFS (5 endpoints)
+----------------------------------------
+ 1. PublicApi.EtfController.exposure
+    Path: GET /api/etfs/{ticker}/exposure
+    Summary: Exposure
+    Description: Returns all ETFs in which the given ticker is a holding
+
+
+ 2. PublicApi.EtfController.holdings
+    Path: GET /api/etfs/{ticker}/holdings
+    Summary: Holdings
+    Description: Returns the holdings of the ETF
+
+
+ 3. PublicApi.EtfController.in_outflow
+    Path: GET /api/etfs/{ticker}/in-outflow
+    Summary: Inflow & Outflow
+    Description: Returns an ETF's inflow and outflow
+
+
+ 4. PublicApi.EtfController.info
+    Path: GET /api/etfs/{ticker}/info
+    Summary: Information
+    Description: Returns the information about the given ETF ticker.
+
+
+ 5. PublicApi.EtfController.weights
+    Path: GET /api/etfs/{ticker}/weights
+    Summary: Sector & Country weights
+    Description: Returns the sector & country weights for the given ETF ticker.
+
+
+
+GROUP_FLOW (2 endpoints)
+----------------------------------------
+ 1. PublicApi.GroupFlowController.greek_flow
+    Path: GET /api/group-flow/{flow_group}/greek-flow
+    Summary: Greek flow
+    Description: Returns the group flow's greek flow (delta & vega flow) for the given market day broken down per min...
+
+ 2. PublicApi.GroupFlowController.greek_flow_expiry
+    Path: GET /api/group-flow/{flow_group}/greek-flow/{expiry}
+    Summary: Greek flow by expiry
+    Description: Returns the group flow's greek flow (delta & vega flow) for the given market day broken down per min...
+
+
+INSIDERS (4 endpoints)
+----------------------------------------
+ 1. PublicApi.InsiderController.transactions
+    Path: GET /api/insider/transactions
+    Summary: Transactions
+    Description: Returns the latest insider transactions.
+
+By default all transacations that have been filled by the ...
+
+ 2. PublicApi.InsiderController.sector_flow
+    Path: GET /api/insider/{sector}/sector-flow
+    Summary: Sector Flow
+    Description: Returns an aggregated view of the insider flow for the given sector.
+
+This can be used to quickly ex...
+
+ 3. PublicApi.InsiderController.insiders
+    Path: GET /api/insider/{ticker}
+    Summary: Insiders
+    Description: Returns all insiders for the given ticker
+
+
+ 4. PublicApi.InsiderController.ticker_flow
+    Path: GET /api/insider/{ticker}/ticker-flow
+    Summary: Ticker Flow
+    Description: Returns an aggregated view of the insider flow for the given ticker.
+
+This can be used to quickly ex...
+
+
+INSTITUTION (6 endpoints)
+----------------------------------------
+ 1. PublicApi.InstitutionController.activity
+    Path: GET /api/institution/{name}/activity
+    Summary: Institutional Activity
+    Description: The trading activities for a given institution.
+
+
+ 2. PublicApi.InstitutionController.holdings
+    Path: GET /api/institution/{name}/holdings
+    Summary: Institutional Holdings
+    Description: Returns the holdings for a given institution.
+
+
+ 3. PublicApi.InstitutionController.sectors
+    Path: GET /api/institution/{name}/sectors
+    Summary: Sector Exposure
+    Description: The sector exposure for a given institution.
+
+
+ 4. PublicApi.InstitutionController.ownership
+    Path: GET /api/institution/{ticker}/ownership
+    Summary: Institutional Ownership
+    Description: The institutional ownership of a given ticker.
+
+
+ 5. PublicApi.InstitutionController.list
+    Path: GET /api/institutions
+    Summary: List of Institutions
+    Description: Returns a list of institutions.
+
+
+ 6. PublicApi.InstitutionController.latest_filings
+    Path: GET /api/institutions/latest_filings
+    Summary: Latest Filings
+    Description: The latest institutional filings.
+
+
+
+MARKET (12 endpoints)
+----------------------------------------
+ 1. PublicApi.MarketController.correlations
+    Path: GET /api/market/correlations
+    Summary: Correlations
+    Description: Returns the correlations between a list of tickers.
+Date must be the current or a past date. If no d...
+
+ 2. PublicApi.MarketController.events
+    Path: GET /api/market/economic-calendar
+    Summary: Economic calendar
+    Description: Returns the economic calendar.
+
+
+ 3. PublicApi.MarketController.fda_calendar
+    Path: GET /api/market/fda-calendar
+    Summary: FDA Calendar
+    Description: Returns FDA calendar data with filtering options.
+
+The FDA calendar contains information about:
+- PD...
+
+ 4. PublicApi.MarketController.insider_buy_sells
+    Path: GET /api/market/insider-buy-sells
+    Summary: Total Insider Buy & Sells
+    Description: Returns the total amount of purchases & sells as well as notional values for insider transactions
+ac...
+
+ 5. PublicApi.MarketController.market_tide
+    Path: GET /api/market/market-tide
+    Summary: Market Tide
+    Description: Market Tide is a proprietary tool that can be viewed from the Market Overview page. The Market Tide ...
+
+ 6. PublicApi.MarketController.oi_change
+    Path: GET /api/market/oi-change
+    Summary: OI Change
+    Description: Returns the non-Index/non-ETF contracts and OI change data with the highest OI change (default: desc...
+
+ 7. PublicApi.MarketController.sector_etfs
+    Path: GET /api/market/sector-etfs
+    Summary: Sector Etfs
+    Description: Returns the current trading days statistics for the SPDR sector etfs
+
+----
+This can be used to build...
+
+ 8. PublicApi.MarketController.spike
+    Path: GET /api/market/spike
+    Summary: SPIKE
+    Description: Returns the SPIKE values for the given date.
+Date must be the current or a past date. If no date is ...
+
+ 9. PublicApi.MarketController.total_options_volume
+    Path: GET /api/market/total-options-volume
+    Summary: Total Options Volume
+    Description: Returns the total options volume and premium for all trade executions
+that happened on a given tradi...
+
+10. PublicApi.MarketController.sec_indst
+    Path: GET /api/market/{sector}/sector-tide
+    Summary: Sector Tide
+    Description: The Sector tide is similar to the Market Tide. While the market tide is based on options activity of...
+
+11. PublicApi.MarketController.etf_tide
+    Path: GET /api/market/{ticker}/etf-tide
+    Summary: ETF Tide
+    Description: The ETF tide is similar to the Market Tide. While the market tide is based on options activity of th...
+
+12. PublicApi.NetFlowController.expiry
+    Path: GET /api/net-flow/expiry
+    Summary: Net Flow Expiry
+    Description: Returns net premium flow by `tide_type` category, `moneyness` category, and `expiration` category, a...
+
+
+NEWS (1 endpoints)
+----------------------------------------
+ 1. PublicApi.NewsController.headlines
+    Path: GET /api/news/headlines
+    Summary: News Headlines
+    Description: Returns the latest news headlines for financial markets.
+
+This endpoint provides access to news head...
+
+
+OPTION-CONTRACT (6 endpoints)
+----------------------------------------
+ 1. PublicApi.OptionContractController.flow
+    Path: GET /api/option-contract/{id}/flow
+    Summary: Flow Data
+    Description: Returns the last 50 option trades for the given option chain. Optionally a min premium and a side ca...
+
+ 2. PublicApi.OptionContractController.history
+    Path: GET /api/option-contract/{id}/historic
+    Summary: Historic Data
+    Description: Returns for every trading day historic data for the given option contract
+
+
+ 3. PublicApi.OptionContractController.intraday
+    Path: GET /api/option-contract/{id}/intraday
+    Summary: Intraday Data
+    Description: Returns 1 minute interval intraday data for the given option contract.
+Date must be the current or a...
+
+ 4. PublicApi.OptionContractController.volume_profile
+    Path: GET /api/option-contract/{id}/volume-profile
+    Summary: Volume Profile
+    Description: Returns the volume profile (volume - sweep, floor, cross, ask, bid, etc. - per fill price) for an op...
+
+ 5. PublicApi.OptionContractController.expiry_breakdown
+    Path: GET /api/stock/{ticker}/expiry-breakdown
+    Summary: Expiry Breakdown
+    Description: Returns all expirations for the given trading day for a ticker.
+
+
+ 6. PublicApi.OptionContractController.option_contracts
+    Path: GET /api/stock/{ticker}/option-contracts
+    Summary: Option contracts
+    Description: Returns all option contracts for the given ticker
+
+
+
+OPTION-TRADE (2 endpoints)
+----------------------------------------
+ 1. PublicApi.OptionTradeController.flow_alerts
+    Path: GET /api/option-trades/flow-alerts
+    Summary: Flow Alerts
+    Description: Returns the latest flow alerts.
+
+
+ 2. PublicApi.OptionTradeController.full_tape
+    Path: GET /api/option-trades/full-tape/{date}
+    Summary: Full Tape
+    Description: Download the full tape of data for a given trading date.
+
+NOTICE:
+This endpoint is not included by d...
+
+
+SCREENER (3 endpoints)
+----------------------------------------
+ 1. PublicApi.ScreenerController.analyst_ratings
+    Path: GET /api/screener/analysts
+    Summary: Analyst Rating
+    Description: Returns the latest analyst rating for the given ticker.
+
+
+ 2. PublicApi.ScreenerController.contract_screener
+    Path: GET /api/screener/option-contracts
+    Summary: Hottest Chains
+    Description: A contract screener endpoint to screen the market for contracts by a variety of filter options.
+
+For...
+
+ 3. PublicApi.ScreenerController.stock_screener
+    Path: GET /api/screener/stocks
+    Summary: Stock Screener
+    Description: A stock screener endpoint to screen the market for stocks by a variety of filter options.
+
+For an ex...
+
+
+SEASONALITY (4 endpoints)
+----------------------------------------
+ 1. PublicApi.SeasonalityController.market_seasonality
+    Path: GET /api/seasonality/market
+    Summary: Market Seasonality
+    Description: Returns the average return by month for the tickers SPY, QQQ, IWM, XLE, XLC, XLK, XLV, XLP, XLY, XLR...
+
+ 2. PublicApi.SeasonalityController.month_performers
+    Path: GET /api/seasonality/{month}/performers
+    Summary: Month Performers
+    Description: Returns the tickers with the highest performance in terms of price change in the month over the year...
+
+ 3. PublicApi.SeasonalityController.monthly
+    Path: GET /api/seasonality/{ticker}/monthly
+    Summary: Average return per month
+    Description: Returns the average return by month for the given ticker.
+
+
+ 4. PublicApi.SeasonalityController.year_month
+    Path: GET /api/seasonality/{ticker}/year-month
+    Summary: Price change per month per year
+    Description: Returns the relative price change for all past months over multiple years.
+
+
+
+SHORT (5 endpoints)
+----------------------------------------
+ 1. PublicApi.ShortController.short_data
+    Path: GET /api/shorts/{ticker}/data
+    Summary: Short Data
+    Description: Returns short data including rebate rate and short shares available for a ticker.
+
+
+ 2. PublicApi.ShortController.failures_to_deliver
+    Path: GET /api/shorts/{ticker}/ftds
+    Summary: Failures to Deliver
+    Description: Returns the short failures to deliver per day for the given ticker starting from the given date.
+If ...
+
+ 3. PublicApi.ShortController.short_interest_and_float
+    Path: GET /api/shorts/{ticker}/interest-float
+    Summary: Short Interest and Float
+    Description: Returns short interest and float data for percentage calculations for a ticker.
+This endpoint provid...
+
+ 4. PublicApi.ShortController.short_volume_and_ratio
+    Path: GET /api/shorts/{ticker}/volume-and-ratio
+    Summary: Short Volume and Ratio
+    Description: Returns short volume and short ratio data for a ticker.
+
+
+ 5. PublicApi.ShortController.short_volume_by_exchange
+    Path: GET /api/shorts/{ticker}/volumes-by-exchange
+    Summary: Short Volume By Exchange
+    Description: Returns short volume data broken down by exchange for a ticker.
+
+
+
+STOCK (39 endpoints)
+----------------------------------------
+ 1. PublicApi.TickerController.companies_in_sector
+    Path: GET /api/stock/{sector}/tickers
+    Summary: Companies in Sector
+    Description: Returns a list of tickers which are in the given sector.
+
+
+ 2. PublicApi.TickerController.atm_chains
+    Path: GET /api/stock/{ticker}/atm-chains
+    Summary: ATM Chains
+    Description: Returns the ATM chains for the given expirations
+
+
+ 3. PublicApi.TickerController.flow_alerts
+    Path: GET /api/stock/{ticker}/flow-alerts
+    Summary: Flow Alerts
+    Description: Returns the latest flow alerts for the given ticker.
+
+
+ 4. PublicApi.TickerController.flow_per_expiry
+    Path: GET /api/stock/{ticker}/flow-per-expiry
+    Summary: Flow per expiry
+    Description: Returns the option flow per expiry for the last trading day
+
+
+ 5. PublicApi.TickerController.flow_per_strike
+    Path: GET /api/stock/{ticker}/flow-per-strike
+    Summary: Flow per strike
+    Description: Returns the option flow per strike for a given trading day.
+
+
+ 6. PublicApi.TickerController.flow_per_strike_intraday
+    Path: GET /api/stock/{ticker}/flow-per-strike-intraday
+    Summary: Flow per strike intraday
+    Description: Returns the options flow for a given date in one minute intervals (the one minute intervals are not ...
+
+ 7. PublicApi.TickerController.flow_recent
+    Path: GET /api/stock/{ticker}/flow-recent
+    Summary: Recent flows
+    Description: Returns the latest flows for the given ticker. Optionally a min premium and a side can be supplied i...
+
+ 8. PublicApi.TickerController.greek_exposure
+    Path: GET /api/stock/{ticker}/greek-exposure
+    Summary: Greek Exposure
+    Description: Greek Exposure is the assumed greek exposure that market makers are exposed to.
+
+The most popular gr...
+
+ 9. PublicApi.TickerController.greek_exposure_by_expiry
+    Path: GET /api/stock/{ticker}/greek-exposure/expiry
+    Summary: Greek Exposure By Expiry
+    Description: The greek exposure of a ticker grouped by expiry dates across all contracts on a given market date.
+
+
+10. PublicApi.TickerController.greek_exposure_by_strike
+    Path: GET /api/stock/{ticker}/greek-exposure/strike
+    Summary: Greek Exposure By Strike
+    Description: The greek exposure of a ticker grouped by strike price across all contracts on a given market date.
+
+
+11. PublicApi.TickerController.greek_exposure_by_strike_expiry
+    Path: GET /api/stock/{ticker}/greek-exposure/strike-expiry
+    Summary: Greek Exposure By Strike And Expiry
+    Description: The greek exposure of a ticker grouped by strike price for a specific expiry date.
+
+
+12. PublicApi.TickerController.greek_flow
+    Path: GET /api/stock/{ticker}/greek-flow
+    Summary: Greek flow
+    Description: Returns the tickers greek flow (delta & vega flow) for the given market day broken down per minute.
+...
+
+13. PublicApi.TickerController.greek_flow_expiry
+    Path: GET /api/stock/{ticker}/greek-flow/{expiry}
+    Summary: Greek flow by expiry
+    Description: Returns the tickers greek flow (delta & vega flow) for the given market day broken down per minute &...
+
+14. PublicApi.TickerController.greeks
+    Path: GET /api/stock/{ticker}/greeks
+    Summary: Greeks
+    Description: Returns the greeks for each strike for a single expiry date.
+
+
+15. PublicApi.TickerController.historical_risk_reversal_skew
+    Path: GET /api/stock/{ticker}/historical-risk-reversal-skew
+    Summary: Historical Risk Reversal Skew
+    Description: Returns the historical risk reversal skew (the difference between put and call volatility) at a delt...
+
+16. PublicApi.TickerController.info
+    Path: GET /api/stock/{ticker}/info
+    Summary: Information
+    Description: Returns a information about the given ticker.
+
+
+17. PublicApi.TickerController.insider_buy_sell
+    Path: GET /api/stock/{ticker}/insider-buy-sells
+    Summary: Insider buy & sells
+    Description: Returns the total amount of purchases & sells as well as notional values for insider transactions
+fo...
+
+18. PublicApi.TickerController.interpolated_iv
+    Path: GET /api/stock/{ticker}/interpolated-iv
+    Summary: Interpolated IV
+    Description: Returns the Interpolated IV for a given trading day. If there is no expiration then the data is calc...
+
+19. PublicApi.TickerController.iv_rank
+    Path: GET /api/stock/{ticker}/iv-rank
+    Summary: IV Rank
+    Description: Returns the IV rank data for a ticker over a period of time.
+IV rank is a measure of where current i...
+
+20. PublicApi.TickerController.max_pain
+    Path: GET /api/stock/{ticker}/max-pain
+    Summary: Max Pain
+    Description: Returns the max pain for all expirations for the given ticker for the last 120 days
+
+
+21. PublicApi.TickerController.net_prem_ticks
+    Path: GET /api/stock/{ticker}/net-prem-ticks
+    Summary: Call/Put Net/Vol Ticks
+    Description: Returns the net premium ticks for a given ticker which can be used to build the following chart:
+![N...
+
+22. PublicApi.TickerController.nope
+    Path: GET /api/stock/{ticker}/nope
+    Summary: Nope
+    Description: Returns the tickers NOPE for the given market day broken down per minute.
+
+NOPE is the Net Options P...
+
+23. PublicApi.TickerController.ohlc
+    Path: GET /api/stock/{ticker}/ohlc/{candle_size}
+    Summary: OHLC
+    Description: Returns the Open High Low Close (OHLC) candle data for a given ticker.
+
+Results are limited to 2,500...
+
+24. PublicApi.TickerController.oi_change
+    Path: GET /api/stock/{ticker}/oi-change
+    Summary: OI Change
+    Description: Returns the tickers contracts' OI change data ordered by absolute OI change (default: descending).
+D...
+
+25. PublicApi.TickerController.oi_per_expiry
+    Path: GET /api/stock/{ticker}/oi-per-expiry
+    Summary: OI per Expiry
+    Description: Returns the total open interest for calls and puts for a specific expiry date.
+
+
+26. PublicApi.TickerController.oi_per_strike
+    Path: GET /api/stock/{ticker}/oi-per-strike
+    Summary: OI per Strike
+    Description: Returns the total open interest for calls and puts for a specific strike.
+
+
+27. PublicApi.TickerController.option_chains
+    Path: GET /api/stock/{ticker}/option-chains
+    Summary: Option Chains
+    Description: Returns all option symbols for the given ticker that were present at the given day.
+
+If no date is g...
+
+28. PublicApi.TickerController.option_price_level
+    Path: GET /api/stock/{ticker}/option/stock-price-levels
+    Summary: Option Price Levels
+    Description: Returns the call and put volume per price level for the given ticker.
+
+----
+Can be used to build a c...
+
+29. PublicApi.TickerController.vol_oi_per_expiry
+    Path: GET /api/stock/{ticker}/option/volume-oi-expiry
+    Summary: Volume & OI per Expiry
+    Description: Returns the total volume and open interest per expiry for the given ticker.
+
+
+30. PublicApi.TickerController.options_volume
+    Path: GET /api/stock/{ticker}/options-volume
+    Summary: Options Volume
+    Description: Returns the options volume & premium for all trade executions
+that happened on a given trading date ...
+
+31. PublicApi.TickerController.spot_exposures_one_minute
+    Path: GET /api/stock/{ticker}/spot-exposures
+    Summary: Spot GEX exposures per 1min
+    Description: Returns the spot GEX exposures for the given ticker per minute.
+
+Spot GEX is the assumed $ value of ...
+
+32. PublicApi.TickerController.spot_exposures_by_strike_expiry_v2
+    Path: GET /api/stock/{ticker}/spot-exposures/expiry-strike
+    Summary: Spot GEX exposures by strike & expiry
+    Description: Returns the most recent spot GEX exposures across all strikes for the given ticker & expiration on a...
+
+33. PublicApi.TickerController.spot_exposures_by_strike
+    Path: GET /api/stock/{ticker}/spot-exposures/strike
+    Summary: Spot GEX exposures by strike
+    Description: Returns the most recent spot GEX exposures across all strikes for the given ticker on a given date. ...
+
+34. PublicApi.TickerController.spot_exposures_by_strike_expiry
+    Path: GET /api/stock/{ticker}/spot-exposures/{expiry}/strike
+    Summary: Spot GEX exposures by strike & expiry (Deprecated)
+    Description: This endpoint has been deprecated and will be removed, please migrate to the new [endpoint](https://...
+
+35. PublicApi.TickerController.last_stock_state
+    Path: GET /api/stock/{ticker}/stock-state
+    Summary: Stock State
+    Description: Returns the last stock state for the given ticker.
+
+This is the easiest way to retreive the open, cl...
+
+36. PublicApi.TickerController.stock_volume_price_level
+    Path: GET /api/stock/{ticker}/stock-volume-price-levels
+    Summary: Off/Lit Price Levels
+    Description: Returns the lit & off lit stock volume per price level for the given ticker.
+
+----
+Important: The vo...
+
+37. PublicApi.TickerController.realized_volatility
+    Path: GET /api/stock/{ticker}/volatility/realized
+    Summary: Realized Volatility
+    Description: The implied and realized volatility of a given ticker. The implied volatility is the expected 30 day...
+
+38. PublicApi.TickerController.volatility_stats
+    Path: GET /api/stock/{ticker}/volatility/stats
+    Summary: Volatility Statistics
+    Description: Returns comprehensive volatility statistics for a ticker on a specific date, including
+implied volat...
+
+39. PublicApi.TickerController.implied_volatility_term_structure
+    Path: GET /api/stock/{ticker}/volatility/term-structure
+    Summary: Implied Volatility Term Structure
+    Description: The average of the latest volatilities for the at the money call and put contracts for every expiry ...
+
+
+WEBSOCKET (6 endpoints)
+----------------------------------------
+ 1. PublicApi.SocketController.channels
+    Path: GET /api/socket
+    Summary: WebSocket channels
+    Description: Returns the available WebSocket channels for connections.
+
+## Websocket Guide
+Important: Websockets ...
+
+ 2. PublicApi.SocketController.flow_alerts
+    Path: GET /api/socket/flow_alerts
+    Summary: Flow alerts
+    Description: NOTE: This is only the documenation for the websocket channel `flow-alerts`
+Important: Websockets ar...
+
+ 3. PublicApi.SocketController.gex
+    Path: GET /api/socket/gex
+    Summary: GEX
+    Description: NOTE: This is only the documenation for the websocket channel `gex:<TICKER>` & `gex_strike:<TICKER>`...
+
+ 4. PublicApi.SocketController.news
+    Path: GET /api/socket/news
+    Summary: News
+    Description: NOTE: This is only the documenation for the websocket channel `news`
+Important: Websockets are not p...
+
+ 5. PublicApi.SocketController.option_trades
+    Path: GET /api/socket/option_trades
+    Summary: Option trades
+    Description: NOTE: This is only the documenation for the websocket channel `option_trades` & `option_trades:<TICK...
+
+ 6. PublicApi.SocketController.price
+    Path: GET /api/socket/price
+    Summary: Price
+    Description: NOTE: This is only the documenation for the websocket channel `price:<TICKER>`
+Important: Websockets...
+
+============================================================
+TOTAL API ENDPOINTS: 105
+============================================================
+
+CLEAN ENDPOINT LIST
+==================================================
+
+ALERTS (2 methods):
+------------------------------
+ 1. public_api._alerts_controller.alerts
+    Description: Alerts
+ 2. public_api._alerts_controller.configs
+    Description: Alert configurations
+
+CONGRESS (3 methods):
+------------------------------
+ 1. public_api._congress_controller.congress_trader
+    Description: Recent Reports By Trader
+ 2. public_api._congress_controller.congress_late_reports
+    Description: Recent Late Reports
+ 3. public_api._congress_controller.congress_recent_trades
+    Description: Recent Congress Trades
+
+DARKPOOL (2 methods):
+------------------------------
+ 1. public_api._darkpool_controller.darkpool_recent
+    Description: Recent Darkpool Trades
+ 2. public_api._darkpool_controller.darkpool_ticker
+    Description: Ticker Darkpool Trades
+
+EARNINGS (3 methods):
+------------------------------
+ 1. public_api._earnings_controller.afterhours
+    Description: Afterhours
+ 2. public_api._earnings_controller.premarket
+    Description: Premarket
+ 3. public_api._earnings_controller.ticker
+    Description: Historical Ticker Earnings
+
+ETFS (5 methods):
+------------------------------
+ 1. public_api._etf_controller.exposure
+    Description: Exposure
+ 2. public_api._etf_controller.holdings
+    Description: Holdings
+ 3. public_api._etf_controller.in_outflow
+    Description: Inflow & Outflow
+ 4. public_api._etf_controller.info
+    Description: Information
+ 5. public_api._etf_controller.weights
+    Description: Sector & Country weights
+
+GROUP_FLOW (2 methods):
+------------------------------
+ 1. public_api._group_flow_controller.greek_flow
+    Description: Greek flow
+ 2. public_api._group_flow_controller.greek_flow_expiry
+    Description: Greek flow by expiry
+
+INSIDERS (4 methods):
+------------------------------
+ 1. public_api._insider_controller.transactions
+    Description: Transactions
+ 2. public_api._insider_controller.sector_flow
+    Description: Sector Flow
+ 3. public_api._insider_controller.insiders
+    Description: Insiders
+ 4. public_api._insider_controller.ticker_flow
+    Description: Ticker Flow
+
+INSTITUTION (6 methods):
+------------------------------
+ 1. public_api._institution_controller.activity
+    Description: Institutional Activity
+ 2. public_api._institution_controller.holdings
+    Description: Institutional Holdings
+ 3. public_api._institution_controller.sectors
+    Description: Sector Exposure
+ 4. public_api._institution_controller.ownership
+    Description: Institutional Ownership
+ 5. public_api._institution_controller.list
+    Description: List of Institutions
+ 6. public_api._institution_controller.latest_filings
+    Description: Latest Filings
+
+MARKET (12 methods):
+------------------------------
+ 1. public_api._market_controller.correlations
+    Description: Correlations
+ 2. public_api._market_controller.events
+    Description: Economic calendar
+ 3. public_api._market_controller.fda_calendar
+    Description: FDA Calendar
+ 4. public_api._market_controller.insider_buy_sells
+    Description: Total Insider Buy & Sells
+ 5. public_api._market_controller.market_tide
+    Description: Market Tide
+ 6. public_api._market_controller.oi_change
+    Description: OI Change
+ 7. public_api._market_controller.sector_etfs
+    Description: Sector Etfs
+ 8. public_api._market_controller.spike
+    Description: SPIKE
+ 9. public_api._market_controller.total_options_volume
+    Description: Total Options Volume
+10. public_api._market_controller.sec_indst
+    Description: Sector Tide
+11. public_api._market_controller.etf_tide
+    Description: ETF Tide
+12. public_api._net_flow_controller.expiry
+    Description: Net Flow Expiry
+
+NEWS (1 methods):
+------------------------------
+ 1. public_api._news_controller.headlines
+    Description: News Headlines
+
+OPTION-CONTRACT (6 methods):
+------------------------------
+ 1. public_api._option_contract_controller.flow
+    Description: Flow Data
+ 2. public_api._option_contract_controller.history
+    Description: Historic Data
+ 3. public_api._option_contract_controller.intraday
+    Description: Intraday Data
+ 4. public_api._option_contract_controller.volume_profile
+    Description: Volume Profile
+ 5. public_api._option_contract_controller.expiry_breakdown
+    Description: Expiry Breakdown
+ 6. public_api._option_contract_controller.option_contracts
+    Description: Option contracts
+
+OPTION-TRADE (2 methods):
+------------------------------
+ 1. public_api._option_trade_controller.flow_alerts
+    Description: Flow Alerts
+ 2. public_api._option_trade_controller.full_tape
+    Description: Full Tape
+
+SCREENER (3 methods):
+------------------------------
+ 1. public_api._screener_controller.analyst_ratings
+    Description: Analyst Rating
+ 2. public_api._screener_controller.contract_screener
+    Description: Hottest Chains
+ 3. public_api._screener_controller.stock_screener
+    Description: Stock Screener
+
+SEASONALITY (4 methods):
+------------------------------
+ 1. public_api._seasonality_controller.market_seasonality
+    Description: Market Seasonality
+ 2. public_api._seasonality_controller.month_performers
+    Description: Month Performers
+ 3. public_api._seasonality_controller.monthly
+    Description: Average return per month
+ 4. public_api._seasonality_controller.year_month
+    Description: Price change per month per year
+
+SHORT (5 methods):
+------------------------------
+ 1. public_api._short_controller.short_data
+    Description: Short Data
+ 2. public_api._short_controller.failures_to_deliver
+    Description: Failures to Deliver
+ 3. public_api._short_controller.short_interest_and_float
+    Description: Short Interest and Float
+ 4. public_api._short_controller.short_volume_and_ratio
+    Description: Short Volume and Ratio
+ 5. public_api._short_controller.short_volume_by_exchange
+    Description: Short Volume By Exchange
+
+STOCK (39 methods):
+------------------------------
+ 1. public_api._ticker_controller.companies_in_sector
+    Description: Companies in Sector
+ 2. public_api._ticker_controller.atm_chains
+    Description: ATM Chains
+ 3. public_api._ticker_controller.flow_alerts
+    Description: Flow Alerts
+ 4. public_api._ticker_controller.flow_per_expiry
+    Description: Flow per expiry
+ 5. public_api._ticker_controller.flow_per_strike
+    Description: Flow per strike
+ 6. public_api._ticker_controller.flow_per_strike_intraday
+    Description: Flow per strike intraday
+ 7. public_api._ticker_controller.flow_recent
+    Description: Recent flows
+ 8. public_api._ticker_controller.greek_exposure
+    Description: Greek Exposure
+ 9. public_api._ticker_controller.greek_exposure_by_expiry
+    Description: Greek Exposure By Expiry
+10. public_api._ticker_controller.greek_exposure_by_strike
+    Description: Greek Exposure By Strike
+11. public_api._ticker_controller.greek_exposure_by_strike_expiry
+    Description: Greek Exposure By Strike And Expiry
+12. public_api._ticker_controller.greek_flow
+    Description: Greek flow
+13. public_api._ticker_controller.greek_flow_expiry
+    Description: Greek flow by expiry
+14. public_api._ticker_controller.greeks
+    Description: Greeks
+15. public_api._ticker_controller.historical_risk_reversal_skew
+    Description: Historical Risk Reversal Skew
+16. public_api._ticker_controller.info
+    Description: Information
+17. public_api._ticker_controller.insider_buy_sell
+    Description: Insider buy & sells
+18. public_api._ticker_controller.interpolated_iv
+    Description: Interpolated IV
+19. public_api._ticker_controller.iv_rank
+    Description: IV Rank
+20. public_api._ticker_controller.max_pain
+    Description: Max Pain
+21. public_api._ticker_controller.net_prem_ticks
+    Description: Call/Put Net/Vol Ticks
+22. public_api._ticker_controller.nope
+    Description: Nope
+23. public_api._ticker_controller.ohlc
+    Description: OHLC
+24. public_api._ticker_controller.oi_change
+    Description: OI Change
+25. public_api._ticker_controller.oi_per_expiry
+    Description: OI per Expiry
+26. public_api._ticker_controller.oi_per_strike
+    Description: OI per Strike
+27. public_api._ticker_controller.option_chains
+    Description: Option Chains
+28. public_api._ticker_controller.option_price_level
+    Description: Option Price Levels
+29. public_api._ticker_controller.vol_oi_per_expiry
+    Description: Volume & OI per Expiry
+30. public_api._ticker_controller.options_volume
+    Description: Options Volume
+31. public_api._ticker_controller.spot_exposures_one_minute
+    Description: Spot GEX exposures per 1min
+32. public_api._ticker_controller.spot_exposures_by_strike_expiry_v2
+    Description: Spot GEX exposures by strike & expiry
+33. public_api._ticker_controller.spot_exposures_by_strike
+    Description: Spot GEX exposures by strike
+34. public_api._ticker_controller.spot_exposures_by_strike_expiry
+    Description: Spot GEX exposures by strike & expiry (Deprecated)
+35. public_api._ticker_controller.last_stock_state
+    Description: Stock State
+36. public_api._ticker_controller.stock_volume_price_level
+    Description: Off/Lit Price Levels
+37. public_api._ticker_controller.realized_volatility
+    Description: Realized Volatility
+38. public_api._ticker_controller.volatility_stats
+    Description: Volatility Statistics
+39. public_api._ticker_controller.implied_volatility_term_structure
+    Description: Implied Volatility Term Structure
+
+WEBSOCKET (6 methods):
+------------------------------
+ 1. public_api._socket_controller.channels
+    Description: WebSocket channels
+ 2. public_api._socket_controller.flow_alerts
+    Description: Flow alerts
+ 3. public_api._socket_controller.gex
+    Description: GEX
+ 4. public_api._socket_controller.news
+    Description: News
+ 5. public_api._socket_controller.option_trades
+    Description: Option trades
+ 6. public_api._socket_controller.price
+    Description: Price
+
+TOTAL: 105 endpoints
+
+CATEGORIES FOUND: 17
+  alerts: 2 endpoints
+  congress: 3 endpoints
+  darkpool: 2 endpoints
+  earnings: 3 endpoints
+  etfs: 5 endpoints
+  group_flow: 2 endpoints
+  insiders: 4 endpoints
+  institution: 6 endpoints
+  market: 12 endpoints
+  news: 1 endpoints
+  option-contract: 6 endpoints
+  option-trade: 2 endpoints
+  screener: 3 endpoints
+  seasonality: 4 endpoints
+  short: 5 endpoints
+  stock: 39 endpoints
+  websocket: 6 endpoints
+
+This should give us the complete list of all 105 endpoints!

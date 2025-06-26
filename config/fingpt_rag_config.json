@@ -1,0 +1,25 @@
+{
+  "embedding_model": "BAAI/bge-base-en",
+  "vector_db_path": "./data/chromadb/",
+  "collection_name": "financial_news_v1",
+  "chunk_size": 512,
+  "chunk_overlap": 50,
+  "retrieval_k": 5,
+  "news_ingestion": {
+    "news_sources": ["alpha_vantage", "finnhub", "polygon"],
+    "rate_limits": {
+      "alpha_vantage": 12.0,
+      "finnhub": 1.0,
+      "polygon": 0.1
+    },
+    "api_keys": {
+      "alpha_vantage": "",
+      "finnhub": "",
+      "polygon": ""
+    }
+  },
+  "sentiment_models": {
+    "primary": "FinGPT/fingpt-sentiment_llama2-13b_lora",
+    "fallback": "FinGPT/fingpt-sentiment_internlm-20b_lora"
+  }
+}

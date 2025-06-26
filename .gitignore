@@ -212,3 +212,6 @@ alpaca_config.py
 polygon_config.py
 trading_config.json
 gpu_momentum/venv/bin
+
+# FinGPT directory
+FinGPT/
